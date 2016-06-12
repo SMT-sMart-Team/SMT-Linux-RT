@@ -5,22 +5,19 @@ echo "==========================================================================
 echo "start execute $0"
 echo "make clean"
 make distclean 
+make clean 
 echo "make .config"
 # make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bb.org_defconfig 
 cp apm_defconfig .config
 echo "make kernel zImage"
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- zImage
-#make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage
 echo "make dtbs"
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- dtbs 
-#make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs 
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs 
 echo "make modules"
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules
-#make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules 
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules 
 echo "install zImage dtbs & modules"
 rm -rf output; mkdir -p output; mkdir -p output/dtbs
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules_install INSTALL_MOD_PATH=`pwd`/output
-#make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules_install INSTALL_MOD_PATH=`pwd`/output
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules_install INSTALL_MOD_PATH=`pwd`/output
 cp arch/arm/boot/zImage `pwd`/output
 cp .config `pwd`/output/kernel_config
 cp arch/arm/boot/dts/*.dtb `pwd`/output/dtbs
