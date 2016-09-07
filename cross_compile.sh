@@ -26,7 +26,7 @@ cp arch/arm/boot/dts/Makefile `pwd`/output/dtbs
 # cp arch/arm/boot/dts/am335x-bone-common.dtsi `pwd`/output/dtbs
 
 echo "tar zImage dtbs & modules"
-cd `pwd`/output; tar -czvf ../`date +%Y%m%d`_apm-kernel-4.1.13_apm-defconfig_ref-ti-r36-inDebian8.tar.gz *
+cd `pwd`/output; tar -czvf ../`date +%Y%m%d`_apm-kernel-4.1.13_apm-config-adis16400.tar.gz *
 
 echo "end execute $0"
 echo "==================================================================================="

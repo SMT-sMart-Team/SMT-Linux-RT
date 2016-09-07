@@ -198,6 +198,7 @@ alias symbol:__cast6_encrypt cast6_generic
 alias symbol:ath9k_cmn_count_streams ath9k_common
 alias symbol:ceph_open_session libceph
 alias symbol:rtl_cam_delete_one_entry rtlwifi
+alias symbol:adis_write_reg adis_lib
 alias symbol:usb_stor_clear_halt usb_storage
 alias symbol:lc_create lru_cache
 alias symbol:dib0090_update_rframp_7090 dib0090
@@ -353,6 +354,7 @@ alias symbol:bt_procfs_cleanup bluetooth
 alias symbol:mrp_request_join mrp
 alias symbol:transport_set_vpd_ident_type target_core_mod
 alias symbol:usb_wwan_ioctl usb_wwan
+alias symbol:adis_init adis_lib
 alias symbol:ath9k_hw_puttxbuf ath9k_hw
 alias symbol:p9_release_pages 9pnet
 alias symbol:dm_get_queue_limits dm_mod
@@ -394,6 +396,7 @@ alias symbol:line6_resume snd_usb_line6
 alias symbol:hid_sensor_read_raw_hyst_value hid_sensor_iio_common
 alias symbol:gspca_disconnect gspca_main
 alias symbol:rt2800_config_pairwise_key rt2800lib
+alias symbol:adis_enable_irq adis_lib
 alias symbol:cfg80211_chandef_dfs_required cfg80211
 alias symbol:se_dev_set_emulate_caw target_core_mod
 alias symbol:__fscache_update_cookie fscache
@@ -481,6 +484,7 @@ alias symbol:rtl92c_phy_iq_calibrate rtl8192c_common
 alias symbol:ssb_dma_translation ssb
 alias symbol:dm_restorepowerindex rtl8192c_common
 alias symbol:osd_end_request libosd
+alias symbol:adis_update_scan_mode adis_lib
 alias symbol:dib7000m_pid_filter dib7000m
 alias symbol:rds_info_register_func rds
 alias symbol:ieee80211_csa_finish mac80211
@@ -747,6 +751,7 @@ alias symbol:transport_set_vpd_proto_id target_core_mod
 alias symbol:hostap_set_hostapd_sta hostap
 alias symbol:rt2x00usb_suspend rt2x00usb
 alias symbol:stv0288_attach stv0288
+alias symbol:adis_single_conversion adis_lib
 alias symbol:l2tp_tunnel_delete l2tp_core
 alias symbol:nft_meta_get_eval nft_meta
 alias symbol:soc_camera_power_init soc_camera
@@ -951,6 +956,7 @@ alias symbol:iio_kfifo_allocate kfifo_buf
 alias symbol:line6_pcm_release snd_usb_line6
 alias symbol:nfc_fw_download_done nfc
 alias symbol:wimax_state_get wimax
+alias symbol:adis_read_reg adis_lib
 alias symbol:dm_kcopyd_do_callback dm_mod
 alias symbol:rds_connect_complete rds
 alias symbol:dra7_mcasp_hdmi_gpio_set snd_soc_davinci_mcasp
@@ -1181,6 +1187,7 @@ alias symbol:rtl_query_rxpwrpercentage rtlwifi
 alias symbol:dm_bufio_client_create dm_bufio
 alias symbol:spi_nor_scan spi_nor
 alias symbol:v4l2_try_ext_ctrls videodev
+alias symbol:adis_probe_trigger adis_lib
 alias symbol:dib3000mb_attach dib3000mb
 alias symbol:rc_map_get rc_core
 alias symbol:nft_parse_register nf_tables
@@ -1738,6 +1745,7 @@ alias symbol:hci_conn_switch_role bluetooth
 alias symbol:iio_device_free industrialio
 alias symbol:nf_log_dump_tcp_header nf_log_common
 alias symbol:cfg80211_check_station_change cfg80211
+alias symbol:adis_remove_trigger adis_lib
 alias symbol:mxl5007t_attach mxl5007t
 alias symbol:v4l2_subdev_g_ctrl videodev
 alias symbol:iwl_wait_notification iwlwifi
@@ -2468,6 +2476,7 @@ alias symbol:dm_tm_commit dm_persistent_data
 alias symbol:ieee80211_tx_status_noskb mac80211
 alias symbol:zs_unmap_object zsmalloc
 alias symbol:bt_to_errno bluetooth
+alias symbol:adis_setup_buffer_and_trigger adis_lib
 alias symbol:cfg80211_cqm_txe_notify cfg80211
 alias symbol:i2400m_rx i2400m
 alias symbol:uwb_ie_next uwb
@@ -2496,6 +2505,7 @@ alias symbol:devm_input_allocate_polled_device input_polldev
 alias symbol:ip_set_hostmask_map ip_set
 alias symbol:ipcomp_output xfrm_ipcomp
 alias symbol:hid_sensor_write_raw_hyst_value hid_sensor_iio_common
+alias symbol:adis_check_status adis_lib
 alias symbol:fscache_check_aux fscache
 alias symbol:md_reap_sync_thread md_mod
 alias symbol:tuner_count tuner_types
@@ -2736,6 +2746,7 @@ alias symbol:ath9k_cmn_rx_skb_postprocess ath9k_common
 alias symbol:fcoe_check_wait_queue libfcoe
 alias symbol:nft_reject_policy nft_reject
 alias symbol:target_put_sess_cmd target_core_mod
+alias symbol:adis_debugfs_reg_access adis_lib
 alias symbol:ceph_caps_for_mode libceph
 alias symbol:ceph_osdc_build_request libceph
 alias symbol:dm_cache_policy_get_version dm_cache
@@ -2865,6 +2876,7 @@ alias symbol:sparse_keymap_setup sparse_keymap
 alias symbol:ceph_create_snap_context libceph
 alias symbol:dccp_hashinfo dccp
 alias symbol:v4l2_async_unregister_subdev videodev
+alias symbol:adis_initial_startup adis_lib
 alias symbol:nft_set_gc_batch_release nf_tables
 alias symbol:wusbhc_mmcie_set wusbcore
 alias symbol:synproxy_build_options nf_synproxy_core
@@ -3704,6 +3716,7 @@ alias symbol:ftdi_elan_gone_away ftdi_elan
 alias symbol:ocfs2_dlm_lock ocfs2_stackglue
 alias symbol:fc_fill_hdr libfc
 alias symbol:lirc_get_pdata lirc_dev
+alias symbol:adis_reset adis_lib
 alias symbol:transport_kunmap_data_sg target_core_mod
 alias symbol:lirc_dev_fop_close lirc_dev
 alias symbol:v4l2_m2m_fop_mmap v4l2_mem2mem
@@ -3861,6 +3874,7 @@ alias symbol:rds_inc_init rds
 alias symbol:rtl_usb_disconnect rtl_usb
 alias symbol:v4l2_video_std_frame_period videodev
 alias symbol:ath9k_cmn_debug_stat_rx ath9k_common
+alias symbol:adis_cleanup_buffer_and_trigger adis_lib
 alias symbol:ath_printk ath
 alias symbol:fbtft_probe_common fbtft
 alias symbol:dw_mci_pltfm_register dw_mmc_pltfm

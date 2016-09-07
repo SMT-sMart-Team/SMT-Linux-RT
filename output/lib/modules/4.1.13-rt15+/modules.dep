@@ -1384,6 +1384,8 @@ kernel/drivers/iio/adc/viperboard_adc.ko: kernel/drivers/iio/industrialio.ko
 kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko: kernel/drivers/hid/hid-sensor-hub.ko
 kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko: kernel/drivers/iio/industrialio.ko kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko kernel/drivers/hid/hid-sensor-hub.ko
 kernel/drivers/iio/gyro/hid-sensor-gyro-3d.ko: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko kernel/drivers/iio/industrialio-triggered-buffer.ko kernel/drivers/iio/kfifo_buf.ko kernel/drivers/iio/industrialio.ko kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko kernel/drivers/hid/hid-sensor-hub.ko
+kernel/drivers/iio/imu/adis16400.ko: kernel/drivers/iio/imu/adis_lib.ko kernel/drivers/iio/industrialio-triggered-buffer.ko kernel/drivers/iio/kfifo_buf.ko kernel/drivers/iio/industrialio.ko
+kernel/drivers/iio/imu/adis_lib.ko: kernel/drivers/iio/industrialio-triggered-buffer.ko kernel/drivers/iio/kfifo_buf.ko kernel/drivers/iio/industrialio.ko
 kernel/drivers/iio/light/hid-sensor-als.ko: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko kernel/drivers/iio/industrialio-triggered-buffer.ko kernel/drivers/iio/kfifo_buf.ko kernel/drivers/iio/industrialio.ko kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko kernel/drivers/hid/hid-sensor-hub.ko
 kernel/drivers/iio/light/hid-sensor-prox.ko: kernel/drivers/iio/common/hid-sensors/hid-sensor-trigger.ko kernel/drivers/iio/industrialio-triggered-buffer.ko kernel/drivers/iio/kfifo_buf.ko kernel/drivers/iio/industrialio.ko kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko kernel/drivers/hid/hid-sensor-hub.ko
 kernel/drivers/iio/light/tsl2563.ko: kernel/drivers/iio/industrialio.ko
