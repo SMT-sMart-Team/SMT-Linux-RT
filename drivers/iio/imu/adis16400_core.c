@@ -214,6 +214,7 @@ static int adis16400_set_freq(struct adis16400_state *st, unsigned int freq)
 	else
 		st->adis.spi->max_speed_hz = ADIS16400_SPI_FAST;
 
+	st->adis.spi->max_speed_hz = ADIS16400_SPI_SLOW;
 	return adis_write_reg_8(&st->adis, ADIS16400_SMPL_PRD, val);
 }
 
@@ -275,6 +276,7 @@ static int adis16400_initial_setup(struct iio_dev *indio_dev)
 		st->adis.spi->max_speed_hz = ADIS16400_SPI_SLOW;
 	else
 		st->adis.spi->max_speed_hz = ADIS16400_SPI_FAST;
+	st->adis.spi->max_speed_hz = ADIS16400_SPI_SLOW;
 	st->adis.spi->mode = SPI_MODE_3;
 	spi_setup(st->adis.spi);
 
@@ -310,6 +312,7 @@ static int adis16400_initial_setup(struct iio_dev *indio_dev)
 
 		if ((smp_prd & ADIS16400_SMPL_PRD_DIV_MASK) < 0x0A) {
 			st->adis.spi->max_speed_hz = ADIS16400_SPI_FAST;
+		    st->adis.spi->max_speed_hz = ADIS16400_SPI_SLOW;
 			spi_setup(st->adis.spi);
 		}
 	}
