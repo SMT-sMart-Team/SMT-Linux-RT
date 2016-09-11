@@ -264,7 +264,8 @@
 	pinctrl-0 = <&i2c2_pins>;
 
 	status = "okay";
-	clock-frequency = <400000>;
+	/* MB ZhaoYJ @2016-05-14 for ATSha204a wakeup test from 400KHz to 100KHz to meet its requirement (< 133KHz)*/
+	clock-frequency = <100000>;
 };
 
 /include/ "tps65217.dtsi"
