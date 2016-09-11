@@ -147,7 +147,7 @@
                  #address-cells = <1>;
                  #size-cells = <0>;
                  compatible = "adi,adis16365";
-                 reg = <3>;
+                 reg = <0>;
                  /*spi-cpol;
                  spi-cpha;*/
                  /*max 1MHz*/
