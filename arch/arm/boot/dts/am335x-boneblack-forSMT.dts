@@ -148,8 +148,8 @@
                  #size-cells = <0>;
                  compatible = "adi,adis16365";
                  reg = <0>;
-                 /*spi-cpol;
-                 spi-cpha;*/
+                 spi-cpol;
+                 spi-cpha;
                  /*max 1MHz*/
                  spi-max-frequency = <2000000>;
             };

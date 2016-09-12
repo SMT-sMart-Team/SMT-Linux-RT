@@ -34,6 +34,9 @@
 
 #include "adis16400.h"
 
+// add by ZhaoYJ for testing @2016-09-12
+// #define TEST_SPI_LOWEST_SPEED
+
 #ifdef CONFIG_DEBUG_FS
 
 static ssize_t adis16400_show_serial_number(struct file *file,
@@ -276,7 +279,9 @@ static int adis16400_initial_setup(struct iio_dev *indio_dev)
 		st->adis.spi->max_speed_hz = ADIS16400_SPI_SLOW;
 	else
 		st->adis.spi->max_speed_hz = ADIS16400_SPI_FAST;
+#ifdef TEST_SPI_LOWEST_SPEED
 	st->adis.spi->max_speed_hz = ADIS16400_SPI_SLOW;
+#endif
 	st->adis.spi->mode = SPI_MODE_3;
 	spi_setup(st->adis.spi);
 
@@ -312,7 +317,9 @@ static int adis16400_initial_setup(struct iio_dev *indio_dev)
 
 		if ((smp_prd & ADIS16400_SMPL_PRD_DIV_MASK) < 0x0A) {
 			st->adis.spi->max_speed_hz = ADIS16400_SPI_FAST;
+#ifdef TEST_SPI_LOWEST_SPEED
 		    st->adis.spi->max_speed_hz = ADIS16400_SPI_SLOW;
+#endif
 			spi_setup(st->adis.spi);
 		}
 	}
