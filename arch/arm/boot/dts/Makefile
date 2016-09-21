@@ -425,6 +425,7 @@ dtb-$(CONFIG_SOC_AM33XX) += \
 	am335x-boneblack-bbbmini.dtb \
     am335x-boneblack-forSMT.dtb \
     am335x-boneblack-forSMT-multi-pwm.dtb \
+    am335x-boneblack-forSMT-spi-test.dtb \
 	am335x-boneblack-overlay.dtb \
 	am335x-boneblack-nhdmi-overlay.dtb \
 	am335x-boneblack-hdmi-overlay.dtb \

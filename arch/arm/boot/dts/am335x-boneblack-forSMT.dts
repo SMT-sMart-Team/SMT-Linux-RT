@@ -75,8 +75,8 @@
 	spi0_pins: pinmux_spi0_pins {
 		pinctrl-single,pins = <
                   0x150 0x30   /* spi0_sclk, SPI0_SCLK P9_22 */
-                  0x154 0x30   /* spi0_d0, SPI0_MOSI  P9_21 */
-                  0x158 0x10   /* spi0_d1, SPI0_MISO P9_18 */
+                  0x154 0x18   /* spi0_d0, SPI0_MOSI  P9_21 */
+                  0x158 0x38   /* spi0_d1, SPI0_MISO P9_18 */
                   0x15C 0x10   /* spi0_cs0, P9_17 */
                   /* setup a dummy CS for the SPI driver to use, then
                      setup pin modes for the two real CS lines to
