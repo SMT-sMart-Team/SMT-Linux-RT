@@ -423,6 +423,7 @@ dtb-$(CONFIG_SOC_AM33XX) += \
 	am335x-boneblack-spi0.dtb \
 	am335x-boneblack-replicape.dtb \
 	am335x-boneblack-bbbmini.dtb \
+    am335x-boneblack-forSMT-G2.dtb \
     am335x-boneblack-forSMT.dtb \
     am335x-boneblack-forSMT-multi-pwm.dtb \
     am335x-boneblack-forSMT-G1-multi-pwm-7CH.dtb \

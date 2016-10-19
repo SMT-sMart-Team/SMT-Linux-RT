@@ -917,6 +917,8 @@ static int adis16400_probe(struct spi_device *spi)
 	struct iio_dev *indio_dev;
 	int ret;
 
+    // AB ZhaoYJ@2016-10-15 for fixing deviceX num in IIO
+    indio_dev->id = 16365;
 	indio_dev = devm_iio_device_alloc(&spi->dev, sizeof(*st));
 	if (indio_dev == NULL)
 		return -ENOMEM;
