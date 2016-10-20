@@ -50,15 +50,17 @@
 	pru_pins: pinmux_pru_pins {
 		pinctrl-single,pins = <
 			/*0x03c 0x35*/	/* ecap0_in_pwm0_out.pr1_ecap0_ecap_capin, MODE5 | INPUT_PULLUP | PRU, PPM-sum, SBUS, DSM  */
-			0x03c 0x2E	/* gpmc_ad15.pr1_pru0_pru_r31_15, MODE6 | INPUT | PRU, PPM-sum, SBUS, DSM, rcin_ch1 */
-			0x0a8 0x2E	/* lcd_data2.pr1_pru1_pru_r31_2, MODE6 | INPUT | PRU, CH_10, rcin_ch2 */
-			0x0ac 0x2E	/* lcd_data3.pr1_pru1_pru_r31_3, MODE6 | INPUT | PRU, CH_9 rcin_ch3 */
-			0x0a0 0x2E	/* lcd_data0.pr1_pru1_pru_r31_0, MODE6 | INPUT | PRU, CH_12 rcin_ch4 */
+			/* 0x03c 0x2E	gpmc_ad15.pr1_pru0_pru_r31_15, MODE6 | INPUT | PRU, PPM-sum, SBUS, DSM, rcin_ch1 */
+            /* rcin1234 borrow from rcout*/
+			0x0a8 0x2E	/* lcd_data2.pr1_pru1_pru_r31_2, MODE6 | INPUT | PRU, rcin_ch1 */
+			0x0ac 0x2E	/* lcd_data3.pr1_pru1_pru_r31_3, MODE6 | INPUT | PRU, rcin_ch2 */
+			0x0a0 0x2E	/* lcd_data0.pr1_pru1_pru_r31_0, MODE6 | INPUT | PRU, rcin_ch3 */
+			0x0a4 0x2E	/* lcd_data0.pr1_pru1_pru_r31_1, MODE6 | INPUT | PRU, rcin_ch4 */
 
-            /* test with CH5678*/
-             0x1ac 0x2E     /*mcasp0_ahclkr, pr1_pru0_pru_r31_7, P9_25, PULL_DOWN, add for rcin_ch5*/
-             0x1a4 0x2E     /* mcasp0_fsr, pr1_pru0_pru_r31_5, P9_27, PULL_DOWN, add for rcin_ch6*/
-             0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_6, P9_27, PULL_DOWN, add for rcin_ch7*/
+            /* rcin5678 */
+            0x1ac 0x2E     /*mcasp0_ahclkr, pr1_pru0_pru_r31_7, P9_25, PULL_DOWN, add for rcin_ch5*/
+            0x1a4 0x2E     /* mcasp0_fsr, pr1_pru0_pru_r31_5, P9_27, PULL_DOWN, add for rcin_ch6*/
+            0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_3, P9_27, PULL_DOWN, add for rcin_ch7*/
             0x1a0 0x2E      /*mcasp0_aclkr, pr1_pru0_pru_r31_4, P9_27, PULL_DOWN, add for rcin_ch8*/
 
             /*disable pwm7 pwm8 combine*/
@@ -90,9 +92,6 @@
                   /* setup a dummy CS for the SPI driver to use, then
                      setup pin modes for the two real CS lines to
                      set them pull-up */
-                  0x054 0x07  /* led pin, dummy CS */
-                  /* 0x15C 0x17  LSM9DSO_AM CS P9_17 */
-                  0x09C 0x37  /* LSM9DSO_G CS P8_9 */	
 		>;
 	};
 
@@ -105,16 +104,20 @@
                    setup pin modes for the four real CS lines to
                    set them pull-up */
                 0x058 0x07      /* dummy CS */
-				0x164 0x37      /* P9_42 MS5611 CS */
 				0x044 0x37      /* P9_23 MPU9250 CS */
-				0x030 0x37      /* P8_12 FRAM CS */
                 /*start --- add by ZhaoYJ@2016-05-06*/
-                /*MS5803 CS*/
-				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+                /*start --- update dd by ZhaoYJ@2016-10-20*/
+				0x030 0x37      /* MS5803 CS, P8_12 */
+				0x028 0x37      /* ICM20689 CS, P8_14 */
+				0x038 0x37      /* HMC5983 CS, P8_16 */
+				0x08c 0x37      /* M8T CS, P8_18 */
                 /*Control enable*/
-                0x078 0x27     /* gpmc_be1n, GPIO1_28, P9_12, PULL_DOWN, add for OUTPUT_EN*/
+                0x094 0x27     /* P8_8, add for VCC_3V3_EN*/
+                0x09c 0x27     /* P8_9, add for VCC_3V3_SENSOR_EN */
+                0x098 0x27     /* P8_10, add for VCC_3V3_GPS_EN*/
+                0x078 0x27     /* P9_12, add for OUTPUT_EN */
                 /*LEDs & ALARM*/
-                0x040 0x27     /* gpmc_a0, GPIO1_16, P9_15, PULL_DOWN, add for LED_USER1*/
+                0x07c 0x27     /* FLIGHT STATUS LED */
                 0x0C8 0x27     /* lcd_data10, GPIO2_16, P8_36, PULL_DOWN, add for buzzer ALARM*/
                 /*end --- add by ZhaoYJ@2016-05-06*/
 
