@@ -104,7 +104,6 @@
                 /* setup a dummy CS for the SPI driver to use, then
                    setup pin modes for the four real CS lines to
                    set them pull-up */
-                0x058 0x07      /* dummy CS */
 				0x164 0x37      /* P9_42 MS5611 CS */
 				0x044 0x37      /* P9_23 MPU9250 CS */
 				0x030 0x37      /* P8_12 FRAM CS */

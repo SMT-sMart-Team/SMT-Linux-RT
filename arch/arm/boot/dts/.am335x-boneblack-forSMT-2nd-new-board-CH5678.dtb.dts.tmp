@@ -1049,8 +1049,8 @@
 
  user_leds_s0: user_leds_s0 {
   pinctrl-single,pins = <
-
-
+   0x54 (0 | 7)
+   0x58 (((1 << 4)) | 7)
    0x5c (0 | 7)
    0x60 (((1 << 4)) | 7)
   >;
@@ -1079,7 +1079,7 @@
 
  clkout2_pin: pinmux_clkout2_pin {
   pinctrl-single,pins = <
-   0x1b4 (0 | 3)
+
   >;
  };
 
@@ -1446,7 +1446,6 @@
 
 
 
-                0x058 0x07
     0x164 0x37
     0x044 0x37
     0x030 0x37

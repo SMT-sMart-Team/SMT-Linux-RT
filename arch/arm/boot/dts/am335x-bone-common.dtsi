@@ -67,8 +67,8 @@
 
 	user_leds_s0: user_leds_s0 {
 		pinctrl-single,pins = <
-			/*0x54 (PIN_OUTPUT_PULLDOWN | MUX_MODE7)*/	/* gpmc_a5.gpio1_21 */
-			/*0x58 (PIN_OUTPUT_PULLUP | MUX_MODE7)*/	/* gpmc_a6.gpio1_22 */
+			0x54 (PIN_OUTPUT_PULLDOWN | MUX_MODE7)	/* gpmc_a5.gpio1_21 */
+			0x58 (PIN_OUTPUT_PULLUP | MUX_MODE7)	/* gpmc_a6.gpio1_22 */
 			0x5c (PIN_OUTPUT_PULLDOWN | MUX_MODE7)	/* gpmc_a7.gpio1_23 */
 			0x60 (PIN_OUTPUT_PULLUP | MUX_MODE7)	/* gpmc_a8.gpio1_24 */
 		>;
@@ -97,7 +97,7 @@
 
 	clkout2_pin: pinmux_clkout2_pin {
 		pinctrl-single,pins = <
-			0x1b4 (PIN_OUTPUT_PULLDOWN | MUX_MODE3)	/* xdma_event_intr1.clkout2 */
+		/*	0x1b4 (PIN_OUTPUT_PULLDOWN | MUX_MODE3)	 xdma_event_intr1.clkout2 */
 		>;
 	};
 

@@ -37,15 +37,6 @@
 };
 
 &am33xx_pinmux {
-    /* AB ZhaoYJ for enable CAN @2016-05-13 */
-	dcan1_pins: pinmux_dcan1_pins {
-		pinctrl-single,pins = <
-			/* P9_26: uart1_rxd.d_can1_tx */
-			BONE_P9_26 (PIN_OUTPUT_PULLUP | MUX_MODE2)
-			/* P9_24: uart1_txd.d_can1_rx */
-			BONE_P9_24 (PIN_INPUT_PULLUP | MUX_MODE2)
-		>;
-	};
 
 	pru_pins: pinmux_pru_pins {
 		pinctrl-single,pins = <
@@ -55,7 +46,7 @@
 			0x0a8 0x2E	/* lcd_data2.pr1_pru1_pru_r31_2, MODE6 | INPUT | PRU, rcin_ch1 */
 			0x0ac 0x2E	/* lcd_data3.pr1_pru1_pru_r31_3, MODE6 | INPUT | PRU, rcin_ch2 */
 			0x0a0 0x2E	/* lcd_data0.pr1_pru1_pru_r31_0, MODE6 | INPUT | PRU, rcin_ch3 */
-			0x0a4 0x2E	/* lcd_data0.pr1_pru1_pru_r31_1, MODE6 | INPUT | PRU, rcin_ch4 */
+			0x0a4 0x2E	/* lcd_data1.pr1_pru1_pru_r31_1, MODE6 | INPUT | PRU, rcin_ch4 */
 
             /* rcin5678 */
             0x1ac 0x2E     /*mcasp0_ahclkr, pr1_pru0_pru_r31_7, P9_25, PULL_DOWN, add for rcin_ch5*/
@@ -63,9 +54,8 @@
             0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_3, P9_27, PULL_DOWN, add for rcin_ch7*/
             0x1a0 0x2E      /*mcasp0_aclkr, pr1_pru0_pru_r31_4, P9_27, PULL_DOWN, add for rcin_ch8*/
 
-            /*disable pwm7 pwm8 combine*/
-			/*0x1b4 0x0F  spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
-			/*0x164 0x0F  spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+            /*disable pwm8 combine*/
+			/*0x164 0x0F   ecap0_in_pwm0_out, GPIO0_7, P9_42A */
 
 			0x0e8 0x25	/* lcd_pclk.pr1_pru1_pru_r30_10, MODE5 | OUTPUT | PRU, CH_1 */
 			0x0e0 0x25	/* lcd_vsync.pr1_pru1_pru_r30_8, MODE5 | OUTPUT | PRU, CH_2 */
@@ -80,6 +70,14 @@
 			/*BONE_P8_16 (PIN_INPUT_PULLDOWN | MUX_MODE6)*/ /* HC-SR04 ECHO */
 
 			/*BONE_P9_25 (PIN_INPUT_PULLDOWN | MUX_MODE6)*/ /* MPU9250 INT */
+		>;
+	};
+
+    /*AB ZhaoYJ@2016-10-20 for i2c1 (HMC5883)*/
+	i2c1_pins: pinmux_i2c1_pins {
+		pinctrl-single,pins = <
+			0x180 (PIN_INPUT_PULLUP | MUX_MODE3)	/* P9_26, i2c1_sda*/
+			0x184 (PIN_INPUT_PULLUP | MUX_MODE3)	/* P9_24, i2c1_scl*/
 		>;
 	};
 
@@ -103,7 +101,6 @@
                 /* setup a dummy CS for the SPI driver to use, then
                    setup pin modes for the four real CS lines to
                    set them pull-up */
-                0x058 0x07      /* dummy CS */
 				0x044 0x37      /* P9_23 MPU9250 CS */
                 /*start --- add by ZhaoYJ@2016-05-06*/
                 /*start --- update dd by ZhaoYJ@2016-10-20*/
@@ -112,10 +109,10 @@
 				0x038 0x37      /* HMC5983 CS, P8_16 */
 				0x08c 0x37      /* M8T CS, P8_18 */
                 /*Control enable*/
-                0x094 0x27     /* P8_8, add for VCC_3V3_EN*/
-                0x09c 0x27     /* P8_9, add for VCC_3V3_SENSOR_EN */
-                0x098 0x27     /* P8_10, add for VCC_3V3_GPS_EN*/
-                0x078 0x27     /* P9_12, add for OUTPUT_EN */
+                0x094 0x27      /* P8_8, add for VCC_3V3_EN*/
+                0x09c 0x27      /* P8_9, add for VCC_3V3_SENSOR_EN */
+                0x098 0x27      /* P8_10, add for VCC_3V3_GPS_EN*/
+                0x078 0x27      /* P9_12, add for OUTPUT_EN */
                 /*LEDs & ALARM*/
                 0x07c 0x27     /* FLIGHT STATUS LED */
                 0x0C8 0x27     /* lcd_data10, GPIO2_16, P8_36, PULL_DOWN, add for buzzer ALARM*/
@@ -211,9 +208,11 @@
 	status = "okay";
 };
 
-/* AB ZhaoYJ for enable CAN @2016-05-13 */
-&dcan1 {
+&i2c1 {
 	pinctrl-names = "default";
-	pinctrl-0 = <&dcan1_pins>;
+	pinctrl-0 = <&i2c1_pins>;
+
 	status = "okay";
+	clock-frequency = <400000>;
 };
+
