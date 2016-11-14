@@ -1,0 +1,182 @@
+./164:112:./omap3-lilly-dbb056.dts:89:			OMAP3_CORE1_IOPAD(0x219c, PIN_INPUT_PULLUP | MUX_MODE4)   /* uart3_rts_sd.gpio_164 -> cd */
+./164:114:./omap3-n900.dts:168:			OMAP3_CORE1_IOPAD(0x219c, PIN_OUTPUT | MUX_MODE4)		/* uart3_rts_sd.gpio_164 */
+./164:117:./omap3-overo-base.dtsi:131:			OMAP3_CORE1_IOPAD(0x219c, PIN_OUTPUT | MUX_MODE4)		/* uart3_rts_sd.gpio_164 */
+Binary file ./am335x-abbbi.dtb matches
+./am335x-abbbi.dts:76:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-abbbi.dts:86:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+Binary file ./am335x-arduino-tre.dtb matches
+./am335x-arduino-tre.dts:276:			0x19c 0x22	/* mcasp0_ahclkr-_axr2 (AUD_DOUT)->, 	       | MODE2*/
+Binary file ./am335x-base0033.dtb matches
+Binary file ./am335x-boneblack-bbb-exp-c.dtb matches
+Binary file ./am335x-boneblack-bbb-exp-r.dtb matches
+Binary file ./am335x-boneblack-bbbmini.dtb matches
+Binary file ./am335x-boneblack.dtb matches
+./am335x-boneblack.dts:75:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack.dts:85:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+Binary file ./am335x-boneblack-emmc-overlay.dtb matches
+Binary file ./am335x-boneblack-forSMT-2nd-new-board-CH5678.dtb matches
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:61:             0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_6, P9_27, PULL_DOWN, add for rcin_ch7*/
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:112:				/*0x19C 0x37       spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+Binary file ./am335x-boneblack-forSMT.dtb matches
+./am335x-boneblack-forSMT.dts:104:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+./am335x-boneblack-forSMT.dts.imu:104:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+./am335x-boneblack-forSMT.dts.new:104:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+Binary file ./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dtb matches
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dts:104:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+Binary file ./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dtb matches
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dts:104:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+Binary file ./am335x-boneblack-forSMT-G2.dtb matches
+./am335x-boneblack-forSMT-G2.dts:54:            0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_3, P9_27, PULL_DOWN, add for rcin_ch7*/
+Binary file ./am335x-boneblack-forSMT-multi-pwm-7CH.dtb matches
+Binary file ./am335x-boneblack-forSMT-multi-pwm.dtb matches
+./am335x-boneblack-forSMT-multi-pwm.dts:105:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+Binary file ./am335x-boneblack-forSMT-spidev1.0.dtb matches
+./am335x-boneblack-forSMT-spidev1.0.dts:104:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+Binary file ./am335x-boneblack-forSMT-spi-test.dtb matches
+./am335x-boneblack-forSMT-spi-test.dts:104:				0x19C 0x37      /* spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+Binary file ./am335x-boneblack-hdmi-overlay.dtb matches
+./am335x-boneblack-hdmi-overlay.dts:77:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-hdmi-overlay.dts:87:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+Binary file ./am335x-boneblack-nhdmi-overlay.dtb matches
+Binary file ./am335x-boneblack-overlay.dtb matches
+Binary file ./am335x-boneblack-replicape.dtb matches
+Binary file ./am335x-boneblack-spi0.dtb matches
+./am335x-boneblack-spi0.dts:75:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-spi0.dts:85:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+Binary file ./am335x-boneblack-ttyS2.dtb matches
+./am335x-boneblack-ttyS2.dts:77:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-ttyS2.dts:87:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+Binary file ./am335x-boneblack-wl1835mod.dtb matches
+./am335x-bone-common-universal.dtsi:779:		pinctrl-single,pins = <0x19c  0x27>; };     /* Mode 7, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:781:		pinctrl-single,pins = <0x19c  0x2F>; };     /* Mode 7, RxActive */
+./am335x-bone-common-universal.dtsi:783:		pinctrl-single,pins = <0x19c  0x37>; };     /* Mode 7, Pull-Up, RxActive */
+./am335x-bone-common-universal.dtsi:785:		pinctrl-single,pins = <0x19c  0x27>; };     /* Mode 7, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:787:		pinctrl-single,pins = <0x19c  0x21>; };     /* Mode 1, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:789:		pinctrl-single,pins = <0x19c  0x23>; };     /* Mode 3, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:791:		pinctrl-single,pins = <0x19c  0x24>; };     /* Mode 4, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:793:		pinctrl-single,pins = <0x19c  0x25>; };     /* Mode 5, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:795:		pinctrl-single,pins = <0x19c  0x26>; };     /* Mode 6, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:797:		pinctrl-single,pins = <0x19c  (PIN_OUTPUT_PULLDOWN | MUX_MODE2)>; };	/* mcasp0_ahclkr.mcasp0_axr2 */
+Binary file ./am335x-bone.dtb matches
+Binary file ./am335x-bonegreen.dtb matches
+Binary file ./am335x-bonegreen-overlay.dtb matches
+./am335x-cape-bbb-exp-c.dtsi:68:			0x19c 0x22      /* mcasp0_ahclkr.mcasp0_axr2, INPUT | MODE2 */
+./am335x-cape-bbb-exp-r.dtsi:61:			0x19c 0x22      /* mcasp0_ahclkr.mcasp0_axr2, INPUT | MODE2 */
+Binary file ./am335x-chiliboard.dtb matches
+Binary file ./am335x-evm.dtb matches
+./am335x-evm.dts:392:			0x19C (PIN_INPUT | MUX_MODE7)		/* mcasp0_ahclkr.gpio3_17 */
+Binary file ./am335x-evmsk.dtb matches
+./am335x-evmsk.dts:306:			0x19c 0x4	/* mcasp0_ahclkr.ecap2_in_pwm2_out MODE4 */
+./am335x-evmsk.dts:312:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkr.ecap2_in_pwm2_out */
+Binary file ./am335x-lxm.dtb matches
+Binary file ./am335x-nano.dtb matches
+Binary file ./am335x-pepper.dtb matches
+./am33xx.dtsi:304:		i2c2: i2c@4819c000 {
+./am33xx.dtsi:309:			reg = <0x4819c000 0x1000>;
+./am4372.dtsi:477:		i2c2: i2c@4819c000 {
+./am4372.dtsi:479:			reg = <0x4819c000 0x1000>;
+Binary file ./am437x-gp-evm.dtb matches
+./am437x-gp-evm.dts:658:			0x19C	(PIN_INPUT_PULLDOWN | MUX_MODE7)
+Binary file ./am437x-gp-evm-hdmi.dtb matches
+Binary file ./am437x-idk-evm.dtb matches
+Binary file ./am437x-sk-evm.dtb matches
+Binary file ./am43x-epos-evm.dtb matches
+./am43x-epos-evm.dts:253:				0x19c (PIN_OUTPUT | MUX_MODE3)          /* mcasp0_ahclkr.spi1_cs0 */
+Binary file ./am43x-epos-evm-hdmi.dtb matches
+./dra7xx-clocks.dtsi:1012:		reg = <0x019c>;
+./hi3620-hi4511.dts:567:					0x19c 0		/* SD_DATA2 (IOCFG111) */
+./imx25-pinfunc.h:429:#define MX25_PAD_SD1_DATA1__SD1_DATA1		0x19c 0x394 0x000 0x10 0x000
+./imx25-pinfunc.h:430:#define MX25_PAD_SD1_DATA1__AUD7_RXD		0x19c 0x394 0x478 0x13 0x000
+./imx25-pinfunc.h:431:#define MX25_PAD_SD1_DATA1__GPIO_2_26		0x19c 0x394 0x000 0x15 0x000
+./imx35-pinfunc.h:402:#define MX35_PAD_TXD2__UART2_TXD_MUX				0x19c 0x5e0 0x000 0x0 0x0
+./imx35-pinfunc.h:403:#define MX35_PAD_TXD2__SPDIF_SPDIF_EXTCLK			0x19c 0x5e0 0x994 0x1 0x2
+./imx35-pinfunc.h:404:#define MX35_PAD_TXD2__KPP_ROW_5				0x19c 0x5e0 0x984 0x4 0x0
+./imx35-pinfunc.h:405:#define MX35_PAD_TXD2__GPIO3_11					0x19c 0x5e0 0x8f0 0x5 0x0
+./imx50-pinfunc.h:514:#define MX50_PAD_DISP_D11__ELCDIF_DAT_11			0x19c 0x47c 0x728 0x0 0x0
+./imx50-pinfunc.h:515:#define MX50_PAD_DISP_D11__GPIO2_11				0x19c 0x47c 0x000 0x1 0x0
+./imx50-pinfunc.h:516:#define MX50_PAD_DISP_D11__EIM_NANDF_CEN_1			0x19c 0x47c 0x000 0x2 0x0
+./imx50-pinfunc.h:517:#define MX50_PAD_DISP_D11__ESDHC4_DAT1				0x19c 0x47c 0x754 0x4 0x1
+./imx50-pinfunc.h:518:#define MX50_PAD_DISP_D11__KPP_ROW_5				0x19c 0x47c 0x7a4 0x5 0x1
+./imx50-pinfunc.h:519:#define MX50_PAD_DISP_D11__FEC_RDATA_1				0x19c 0x47c 0x77c 0x6 0x1
+./imx50-pinfunc.h:520:#define MX50_PAD_DISP_D11__USBPHY1_DATAOUT_3			0x19c 0x47c 0x000 0x7 0x0
+./imx51-pinfunc.h:363:#define MX51_PAD_CSI1_D10__CSI1_D10			0x19c 0x584 0x000 0x0 0x0
+./imx53-pinfunc.h:654:#define MX53_PAD_EIM_DA0__EMI_NAND_WEIM_DA_0			0x19c 0x4ec 0x000 0x0 0x0
+./imx53-pinfunc.h:655:#define MX53_PAD_EIM_DA0__GPIO3_0				0x19c 0x4ec 0x000 0x1 0x0
+./imx53-pinfunc.h:656:#define MX53_PAD_EIM_DA0__IPU_DISP1_DAT_9			0x19c 0x4ec 0x000 0x3 0x0
+./imx53-pinfunc.h:657:#define MX53_PAD_EIM_DA0__IPU_CSI1_D_9				0x19c 0x4ec 0x000 0x4 0x0
+./imx53-pinfunc.h:658:#define MX53_PAD_EIM_DA0__SRC_BT_CFG2_5				0x19c 0x4ec 0x000 0x7 0x0
+./imx6dl-pinfunc.h:535:#define MX6QDL_PAD_EIM_DA14__EIM_AD14               0x19c 0x56c 0x000 0x0 0x0
+./imx6dl-pinfunc.h:536:#define MX6QDL_PAD_EIM_DA14__IPU1_DI1_D1_CS         0x19c 0x56c 0x000 0x1 0x0
+./imx6dl-pinfunc.h:537:#define MX6QDL_PAD_EIM_DA14__GPIO3_IO14             0x19c 0x56c 0x000 0x5 0x0
+./imx6dl-pinfunc.h:538:#define MX6QDL_PAD_EIM_DA14__SRC_BOOT_CFG14         0x19c 0x56c 0x000 0x7 0x0
+./imx6dl-pinfunc.h:539:#define MX6QDL_PAD_EIM_DA14__EPDC_DATA14            0x19c 0x56c 0x000 0x8 0x0
+./imx6qdl.dtsi:952:			usdhc4: usdhc@0219c000 {
+./imx6qdl.dtsi:954:				reg = <0x0219c000 0x4000>;
+./imx6q-pinfunc.h:465:#define MX6QDL_PAD_DISP0_DAT11__IPU1_DISP0_DATA11   0x19c 0x4b0 0x000 0x0 0x0
+./imx6q-pinfunc.h:466:#define MX6QDL_PAD_DISP0_DAT11__IPU2_DISP0_DATA11   0x19c 0x4b0 0x000 0x1 0x0
+./imx6q-pinfunc.h:467:#define MX6QDL_PAD_DISP0_DAT11__GPIO5_IO05          0x19c 0x4b0 0x000 0x5 0x0
+./imx6sl.dtsi:767:			usdhc4: usdhc@0219c000 {
+./imx6sl.dtsi:769:				reg = <0x0219c000 0x4000>;
+./imx6sl-pinfunc.h:597:#define MX6SL_PAD_KEY_ROW4__KEY_ROW4               0x19c 0x4a4 0x764 0x0 0x0
+./imx6sl-pinfunc.h:598:#define MX6SL_PAD_KEY_ROW4__AUD6_TXC               0x19c 0x4a4 0x624 0x1 0x1
+./imx6sl-pinfunc.h:599:#define MX6SL_PAD_KEY_ROW4__LCD_DATA09             0x19c 0x4a4 0x79c 0x2 0x0
+./imx6sl-pinfunc.h:600:#define MX6SL_PAD_KEY_ROW4__EIM_AD09               0x19c 0x4a4 0x000 0x3 0x0
+./imx6sl-pinfunc.h:601:#define MX6SL_PAD_KEY_ROW4__SD4_CMD                0x19c 0x4a4 0x858 0x4 0x2
+./imx6sl-pinfunc.h:602:#define MX6SL_PAD_KEY_ROW4__GPIO4_IO01             0x19c 0x4a4 0x000 0x5 0x0
+./imx6sl-pinfunc.h:603:#define MX6SL_PAD_KEY_ROW4__USB_OTG1_OC            0x19c 0x4a4 0x824 0x6 0x1
+./imx6sx.dtsi:843:			usdhc4: usdhc@0219c000 {
+./imx6sx.dtsi:845:				reg = <0x0219c000 0x4000>;
+./imx6sx-pinfunc.h:950:#define MX6SX_PAD_QSPI1A_SS1_B__QSPI1_A_SS1_B                     0x019C 0x04E4 0x0000 0x0 0x0
+./imx6sx-pinfunc.h:951:#define MX6SX_PAD_QSPI1A_SS1_B__CAN1_RX                           0x019C 0x04E4 0x068C 0x1 0x2
+./imx6sx-pinfunc.h:952:#define MX6SX_PAD_QSPI1A_SS1_B__CANFD_RX1                         0x019C 0x04E4 0x0694 0x2 0x2
+./imx6sx-pinfunc.h:953:#define MX6SX_PAD_QSPI1A_SS1_B__ECSPI5_MISO                       0x019C 0x04E4 0x0754 0x3 0x1
+./imx6sx-pinfunc.h:954:#define MX6SX_PAD_QSPI1A_SS1_B__CSI1_DATA_10                      0x019C 0x04E4 0x06FC 0x4 0x1
+./imx6sx-pinfunc.h:955:#define MX6SX_PAD_QSPI1A_SS1_B__GPIO4_IO_23                       0x019C 0x04E4 0x0000 0x5 0x0
+./imx6sx-pinfunc.h:956:#define MX6SX_PAD_QSPI1A_SS1_B__WEIM_DATA_2                       0x019C 0x04E4 0x0000 0x6 0x0
+./imx6sx-pinfunc.h:957:#define MX6SX_PAD_QSPI1A_SS1_B__SIM_M_HADDR_12                    0x019C 0x04E4 0x0000 0x7 0x0
+./imx6sx-pinfunc.h:958:#define MX6SX_PAD_QSPI1A_SS1_B__SDMA_DEBUG_PC_3                   0x019C 0x04E4 0x0000 0x9 0x0
+./mcasp:4:./am335x-abbbi.dts:76:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:9:./am335x-abbbi.dts:86:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:28:./am335x-arduino-tre.dts:276:			0x19c 0x22	/* mcasp0_ahclkr-_axr2 (AUD_DOUT)->, 	       | MODE2*/
+./mcasp:42:./am335x-boneblack.dts:75:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:47:./am335x-boneblack.dts:85:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:63:./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:61:             0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_6, P9_27, PULL_DOWN, add for rcin_ch7*/
+./mcasp:99:./am335x-boneblack-forSMT-G2.dts:55:            0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_3, P9_27, PULL_DOWN, add for rcin_ch7*/
+./mcasp:126:./am335x-boneblack-hdmi-overlay.dts:77:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:131:./am335x-boneblack-hdmi-overlay.dts:87:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:149:./am335x-boneblack-spi0.dts:75:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:154:./am335x-boneblack-spi0.dts:85:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:169:./am335x-boneblack-ttyS2.dts:77:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:174:./am335x-boneblack-ttyS2.dts:87:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:188:./am335x-bone-common-universal.dtsi:797:		pinctrl-single,pins = <0x19c  (PIN_OUTPUT_PULLDOWN | MUX_MODE2)>; };	/* mcasp0_ahclkr.mcasp0_axr2 */
+./mcasp:199:./am335x-cape-bbb-exp-c.dtsi:68:			0x19c 0x22      /* mcasp0_ahclkr.mcasp0_axr2, INPUT | MODE2 */
+./mcasp:209:./am335x-cape-bbb-exp-r.dtsi:61:			0x19c 0x22      /* mcasp0_ahclkr.mcasp0_axr2, INPUT | MODE2 */
+./mcasp:218:./am335x-evm.dts:392:			0x19C (PIN_INPUT | MUX_MODE7)		/* mcasp0_ahclkr.gpio3_17 */
+./mcasp:232:./am335x-evmsk.dts:306:			0x19c 0x4	/* mcasp0_ahclkr.ecap2_in_pwm2_out MODE4 */
+./mcasp:233:./am335x-evmsk.dts:312:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkr.ecap2_in_pwm2_out */
+./mcasp:303:./am43x-epos-evm.dts:253:				0x19c (PIN_OUTPUT | MUX_MODE3)          /* mcasp0_ahclkr.spi1_cs0 */
+./omap3-lilly-dbb056.dts:89:			OMAP3_CORE1_IOPAD(0x219c, PIN_INPUT_PULLUP | MUX_MODE4)   /* uart3_rts_sd.gpio_164 -> cd */
+./omap3-n900.dts:168:			OMAP3_CORE1_IOPAD(0x219c, PIN_OUTPUT | MUX_MODE4)		/* uart3_rts_sd.gpio_164 */
+./omap3-overo-base.dtsi:131:			OMAP3_CORE1_IOPAD(0x219c, PIN_OUTPUT | MUX_MODE4)		/* uart3_rts_sd.gpio_164 */
+./omap44xx-clocks.dtsi:281:		reg = <0x019c>;
+./omap4-var-som-om44.dtsi:71:			OMAP4_IOPAD(0x19c, PIN_OUTPUT | MUX_MODE3)		/* fref_clk2_out.gpio_182 */
+./omap5-cm-t54.dts:249:			OMAP5_IOPAD(0x019c, PIN_OUTPUT_PULLDOWN | MUX_MODE6) /* abemcpdm_ul_data.gpio4_109 */
+./omap5-uevm.dts:260:			0x19c (PIN_INPUT_PULLUP | MUX_MODE0) /* uart3_rx_irrx.uart3_usbb3_hsic */
+./omap5-uevm.dts:635:			      <&omap5_pmx_core 0x19c>;
+./qcom-msm8660.dtsi:83:		gsbi12: gsbi@19c00000 {
+./qcom-msm8660.dtsi:86:			reg = <0x19c00000 0x100>;
+./qcom-msm8660.dtsi:95:			serial@19c40000 {
+./qcom-msm8660.dtsi:97:				reg = <0x19c40000 0x1000>,
+./qcom-msm8660.dtsi:98:				      <0x19c00000 0x1000>;
+./qcom-msm8660-surf.dts:10:		gsbi@19c00000 {
+./qcom-msm8660-surf.dts:13:			serial@19c40000 {
+./rk3288.dtsi:608:		reg = <0xff930000 0x19c>;
+./rk3288.dtsi:639:		reg = <0xff940000 0x19c>;
+./vf610-pinfunc.h:664:#define VF610_PAD_PTC30__GPIO_103		0x19C 0x000 ALT0 0x0
+./vf610-pinfunc.h:665:#define VF610_PAD_PTC30__SAI1_RX_SYNC		0x19C 0x000 ALT1 0x0
+./vf610-pinfunc.h:666:#define VF610_PAD_PTC30__DSPI1_CS2		0x19C 0x000 ALT2 0x0
+./vf610-pinfunc.h:667:#define VF610_PAD_PTC30__SRC_RCON28		0x19C 0x000 ALT3 0x0
+./vf610-pinfunc.h:668:#define VF610_PAD_PTC30__FB_MUXED_BE0_B		0x19C 0x000 ALT4 0x0
+./vf610-pinfunc.h:669:#define VF610_PAD_PTC30__FB_TSIZ0		0x19C 0x000 ALT5 0x0
+./vf610-pinfunc.h:670:#define VF610_PAD_PTC30__ADC0_SE5		0x19C 0x000 ALT6 0x0
+./vf610-pinfunc.h:671:#define VF610_PAD_PTC30__DCU1_B5		0x19C 0x000 ALT7 0x0

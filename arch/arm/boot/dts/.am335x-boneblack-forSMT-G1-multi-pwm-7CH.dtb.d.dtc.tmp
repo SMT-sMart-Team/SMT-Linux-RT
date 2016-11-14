@@ -1,0 +1,1 @@
+arch/arm/boot/dts/am335x-boneblack-forSMT-G1-multi-pwm-7CH.dtb: arch/arm/boot/dts/.am335x-boneblack-forSMT-G1-multi-pwm-7CH.dtb.dts.tmp arch/arm/boot/dts/am33xx-clocks.dtsi arch/arm/boot/dts/tps65217.dtsi

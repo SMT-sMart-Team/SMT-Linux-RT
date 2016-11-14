@@ -1,0 +1,395 @@
+Binary file ./am335x-abbbi.dtb matches
+./am335x-abbbi.dts:73:	mcasp0_pins: mcasp0_pins {
+./am335x-abbbi.dts:75:			0x1ac (PIN_INPUT_PULLUP | MUX_MODE0)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-abbbi.dts:76:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-abbbi.dts:77:			0x194 (PIN_OUTPUT_PULLUP | MUX_MODE0)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-abbbi.dts:78:			0x190 (PIN_OUTPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-abbbi.dts:83:	mcasp0_pins_sleep: mcasp0_pins_sleep {
+./am335x-abbbi.dts:85:			0x1ac (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-abbbi.dts:86:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-abbbi.dts:87:			0x194 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-abbbi.dts:88:			0x190 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-abbbi.dts:118:&mcasp0	{
+./am335x-abbbi.dts:120:	pinctrl-0 = <&mcasp0_pins>;
+./am335x-abbbi.dts:121:	pinctrl-1 = <&mcasp0_pins_sleep>;
+./am335x-abbbi.dts:123:	op-mode = <0>;	/* MCASP_IIS_MODE */
+./am335x-abbbi.dts:133:	clk_mcasp0_fixed: clk_mcasp0_fixed {
+./am335x-abbbi.dts:139:	clk_mcasp0: clk_mcasp0 {
+./am335x-abbbi.dts:142:	      clocks = <&clk_mcasp0_fixed>;
+./am335x-abbbi.dts:155:		ti,mcasp-controller = <&mcasp0>;
+./am335x-abbbi.dts:158:		clocks = <&clk_mcasp0>;
+Binary file ./am335x-arduino-tre.dtb matches
+./am335x-arduino-tre.dts:74:		ti,mcasp-controller = <&mcasp0>;
+./am335x-arduino-tre.dts:207:			0x1A0 (PIN_INPUT_PULLUP | MUX_MODE7)	/* mcasp0_aclkr.gpio3_18 */
+./am335x-arduino-tre.dts:272:			0x1ac 0x00	/*mcasp0_ahclkx       (AUD_MCLK)->12MHz, INPUT | MODE0*/
+./am335x-arduino-tre.dts:273:			0x190 0x20	/* mcasp0_aclkx        (AUD_BCLK)->, 	 INPUT | MODE0*/
+./am335x-arduino-tre.dts:274:			0x194 0x20	/* mcasp0_fsx          (AUD_FSX)-> , 	 INPUT | MODE0*/
+./am335x-arduino-tre.dts:275:			0x198 0x20	/* mcasp0_axr0         (AUD_DIN)<-, 	 INPUT | MODE0*/
+./am335x-arduino-tre.dts:276:			0x19c 0x22	/* mcasp0_ahclkr-_axr2 (AUD_DOUT)->, 	       | MODE2*/
+./am335x-arduino-tre.dts:507:&mcasp0 {
+./am335x-arduino-tre.dts:513:	op-mode = <0>;          /* MCASP_IIS_MODE */
+Binary file ./am335x-base0033.dtb matches
+Binary file ./am335x-boneblack-bbb-exp-c.dtb matches
+Binary file ./am335x-boneblack-bbb-exp-r.dtb matches
+Binary file ./am335x-boneblack-bbbmini.dtb matches
+./am335x-boneblack-bbbmini.dts:88:			/* P9_31: mcasp0_aclkx.spi1_sclk */
+./am335x-boneblack-bbbmini.dts:91:			/* P9_29: mcasp0_fsx.spi1_d0 */
+./am335x-boneblack-bbbmini.dts:94:			/* P9_30: mcasp0_axr0.spi1_d1 */
+./am335x-boneblack-bbbmini.dts:97:			/* P9_28: mcasp0_ahclkr.spi1_cs0 */
+Binary file ./am335x-boneblack.dtb matches
+./am335x-boneblack.dts:72:	mcasp0_pins: mcasp0_pins {
+./am335x-boneblack.dts:74:			0x1ac (PIN_INPUT_PULLUP | MUX_MODE0)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack.dts:75:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack.dts:76:			0x194 (PIN_OUTPUT_PULLUP | MUX_MODE0)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack.dts:77:			0x190 (PIN_OUTPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack.dts:82:	mcasp0_pins_sleep: mcasp0_pins_sleep {
+./am335x-boneblack.dts:84:			0x1ac (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack.dts:85:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack.dts:86:			0x194 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack.dts:87:			0x190 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack.dts:117:&mcasp0	{
+./am335x-boneblack.dts:119:	pinctrl-0 = <&mcasp0_pins>;
+./am335x-boneblack.dts:120:	pinctrl-1 = <&mcasp0_pins_sleep>;
+./am335x-boneblack.dts:122:	op-mode = <0>;	/* MCASP_IIS_MODE */
+./am335x-boneblack.dts:132:	clk_mcasp0_fixed: clk_mcasp0_fixed {
+./am335x-boneblack.dts:138:	clk_mcasp0: clk_mcasp0 {
+./am335x-boneblack.dts:141:	      clocks = <&clk_mcasp0_fixed>;
+./am335x-boneblack.dts:154:		ti,mcasp-controller = <&mcasp0>;
+./am335x-boneblack.dts:157:		clocks = <&clk_mcasp0>;
+Binary file ./am335x-boneblack-emmc-overlay.dtb matches
+Binary file ./am335x-boneblack-forSMT-2nd-new-board-CH5678.dtb matches
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:59:             0x1ac 0x2E     /*mcasp0_ahclkr, pr1_pru0_pru_r31_7, P9_25, PULL_DOWN, add for rcin_ch5*/
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:60:             0x1a4 0x2E     /* mcasp0_fsr, pr1_pru0_pru_r31_5, P9_27, PULL_DOWN, add for rcin_ch6*/
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:61:             0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_6, P9_27, PULL_DOWN, add for rcin_ch7*/
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:62:            0x1a0 0x2E      /*mcasp0_aclkr, pr1_pru0_pru_r31_4, P9_27, PULL_DOWN, add for rcin_ch8*/
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:101:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:102:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:103:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+Binary file ./am335x-boneblack-forSMT.dtb matches
+./am335x-boneblack-forSMT.dts:92:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT.dts:93:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT.dts:94:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT.dts:106:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT.dts:110:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+./am335x-boneblack-forSMT.dts.imu:92:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT.dts.imu:93:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT.dts.imu:94:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT.dts.imu:106:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT.dts.imu:110:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+./am335x-boneblack-forSMT.dts.new:92:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT.dts.new:93:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT.dts.new:94:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT.dts.new:106:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT.dts.new:110:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+Binary file ./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dtb matches
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dts:92:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dts:93:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dts:94:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dts:106:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dts:110:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+Binary file ./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dtb matches
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dts:92:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dts:93:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dts:94:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dts:106:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dts:110:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+Binary file ./am335x-boneblack-forSMT-G2.dtb matches
+./am335x-boneblack-forSMT-G2.dts:53:            0x1ac 0x2E     /*mcasp0_ahclkr, pr1_pru0_pru_r31_7, P9_25, PULL_DOWN, add for rcin_ch5*/
+./am335x-boneblack-forSMT-G2.dts:54:            0x1a4 0x2E     /* mcasp0_fsr, pr1_pru0_pru_r31_5, P9_27, PULL_DOWN, add for rcin_ch6*/
+./am335x-boneblack-forSMT-G2.dts:55:            0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_3, P9_27, PULL_DOWN, add for rcin_ch7*/
+./am335x-boneblack-forSMT-G2.dts:56:            0x1a0 0x2E      /*mcasp0_aclkr, pr1_pru0_pru_r31_4, P9_27, PULL_DOWN, add for rcin_ch8*/
+./am335x-boneblack-forSMT-G2.dts:99:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT-G2.dts:100:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT-G2.dts:101:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+Binary file ./am335x-boneblack-forSMT-multi-pwm-7CH.dtb matches
+Binary file ./am335x-boneblack-forSMT-multi-pwm.dtb matches
+./am335x-boneblack-forSMT-multi-pwm.dts:93:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT-multi-pwm.dts:94:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT-multi-pwm.dts:95:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT-multi-pwm.dts:107:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT-multi-pwm.dts:111:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+Binary file ./am335x-boneblack-forSMT-spidev1.0.dtb matches
+./am335x-boneblack-forSMT-spidev1.0.dts:92:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT-spidev1.0.dts:93:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT-spidev1.0.dts:94:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT-spidev1.0.dts:106:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT-spidev1.0.dts:110:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+Binary file ./am335x-boneblack-forSMT-spi-test.dtb matches
+./am335x-boneblack-forSMT-spi-test.dts:92:                0x190 0x33      /* mcasp0_aclkx.spi1_sclk, SPI1_SCLK P9_31 */
+./am335x-boneblack-forSMT-spi-test.dts:93:                0x194 0x13      /* mcasp0_fsx.spi1_d0, SPI1_MOSI P9_29 */
+./am335x-boneblack-forSMT-spi-test.dts:94:                0x198 0x33      /* mcasp0_axr0.spi1_d1, SPI1_MISO P9_30 */
+./am335x-boneblack-forSMT-spi-test.dts:106:                0x1A4 0x27     /* mcasp0_fsr, GPIO3_19, P9_27, PULL_DOWN, add for VCC_3V3_C_EN*/
+./am335x-boneblack-forSMT-spi-test.dts:110:                0x1AC 0x27     /* mcasp0_ahclkr, GPIO3_21, P9_25, PULL_DOWN, add for LED_USER2*/
+Binary file ./am335x-boneblack-hdmi-overlay.dtb matches
+./am335x-boneblack-hdmi-overlay.dts:74:	mcasp0_pins: mcasp0_pins {
+./am335x-boneblack-hdmi-overlay.dts:76:			0x1ac (PIN_INPUT_PULLUP | MUX_MODE0)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack-hdmi-overlay.dts:77:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-hdmi-overlay.dts:78:			0x194 (PIN_OUTPUT_PULLUP | MUX_MODE0)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack-hdmi-overlay.dts:79:			0x190 (PIN_OUTPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack-hdmi-overlay.dts:84:	mcasp0_pins_sleep: mcasp0_pins_sleep {
+./am335x-boneblack-hdmi-overlay.dts:86:			0x1ac (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack-hdmi-overlay.dts:87:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-hdmi-overlay.dts:88:			0x194 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack-hdmi-overlay.dts:89:			0x190 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack-hdmi-overlay.dts:119:&mcasp0	{
+./am335x-boneblack-hdmi-overlay.dts:121:	pinctrl-0 = <&mcasp0_pins>;
+./am335x-boneblack-hdmi-overlay.dts:122:	pinctrl-1 = <&mcasp0_pins_sleep>;
+./am335x-boneblack-hdmi-overlay.dts:124:	op-mode = <0>;	/* MCASP_IIS_MODE */
+./am335x-boneblack-hdmi-overlay.dts:134:	clk_mcasp0_fixed: clk_mcasp0_fixed {
+./am335x-boneblack-hdmi-overlay.dts:140:	clk_mcasp0: clk_mcasp0 {
+./am335x-boneblack-hdmi-overlay.dts:143:	      clocks = <&clk_mcasp0_fixed>;
+./am335x-boneblack-hdmi-overlay.dts:156:		ti,mcasp-controller = <&mcasp0>;
+./am335x-boneblack-hdmi-overlay.dts:159:		clocks = <&clk_mcasp0>;
+Binary file ./am335x-boneblack-nhdmi-overlay.dtb matches
+Binary file ./am335x-boneblack-overlay.dtb matches
+Binary file ./am335x-boneblack-replicape.dtb matches
+Binary file ./am335x-boneblack-spi0.dtb matches
+./am335x-boneblack-spi0.dts:72:	mcasp0_pins: mcasp0_pins {
+./am335x-boneblack-spi0.dts:74:			0x1ac (PIN_INPUT_PULLUP | MUX_MODE0)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack-spi0.dts:75:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-spi0.dts:76:			0x194 (PIN_OUTPUT_PULLUP | MUX_MODE0)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack-spi0.dts:77:			0x190 (PIN_OUTPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack-spi0.dts:82:	mcasp0_pins_sleep: mcasp0_pins_sleep {
+./am335x-boneblack-spi0.dts:84:			0x1ac (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack-spi0.dts:85:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-spi0.dts:86:			0x194 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack-spi0.dts:87:			0x190 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack-spi0.dts:126:&mcasp0	{
+./am335x-boneblack-spi0.dts:128:	pinctrl-0 = <&mcasp0_pins>;
+./am335x-boneblack-spi0.dts:129:	pinctrl-1 = <&mcasp0_pins_sleep>;
+./am335x-boneblack-spi0.dts:131:	op-mode = <0>;	/* MCASP_IIS_MODE */
+./am335x-boneblack-spi0.dts:160:	clk_mcasp0_fixed: clk_mcasp0_fixed {
+./am335x-boneblack-spi0.dts:166:	clk_mcasp0: clk_mcasp0 {
+./am335x-boneblack-spi0.dts:169:	      clocks = <&clk_mcasp0_fixed>;
+./am335x-boneblack-spi0.dts:182:		ti,mcasp-controller = <&mcasp0>;
+./am335x-boneblack-spi0.dts:185:		clocks = <&clk_mcasp0>;
+Binary file ./am335x-boneblack-ttyS2.dtb matches
+./am335x-boneblack-ttyS2.dts:74:	mcasp0_pins: mcasp0_pins {
+./am335x-boneblack-ttyS2.dts:76:			0x1ac (PIN_INPUT_PULLUP | MUX_MODE0)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack-ttyS2.dts:77:			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-ttyS2.dts:78:			0x194 (PIN_OUTPUT_PULLUP | MUX_MODE0)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack-ttyS2.dts:79:			0x190 (PIN_OUTPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack-ttyS2.dts:84:	mcasp0_pins_sleep: mcasp0_pins_sleep {
+./am335x-boneblack-ttyS2.dts:86:			0x1ac (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-boneblack-ttyS2.dts:87:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-boneblack-ttyS2.dts:88:			0x194 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-boneblack-ttyS2.dts:89:			0x190 (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-boneblack-ttyS2.dts:126:&mcasp0	{
+./am335x-boneblack-ttyS2.dts:128:	pinctrl-0 = <&mcasp0_pins>;
+./am335x-boneblack-ttyS2.dts:129:	pinctrl-1 = <&mcasp0_pins_sleep>;
+./am335x-boneblack-ttyS2.dts:131:	op-mode = <0>;	/* MCASP_IIS_MODE */
+./am335x-boneblack-ttyS2.dts:147:	clk_mcasp0_fixed: clk_mcasp0_fixed {
+./am335x-boneblack-ttyS2.dts:153:	clk_mcasp0: clk_mcasp0 {
+./am335x-boneblack-ttyS2.dts:156:	      clocks = <&clk_mcasp0_fixed>;
+./am335x-boneblack-ttyS2.dts:169:		ti,mcasp-controller = <&mcasp0>;
+./am335x-boneblack-ttyS2.dts:172:		clocks = <&clk_mcasp0>;
+Binary file ./am335x-boneblack-wl1835mod.dtb matches
+./am335x-bone-common-universal.dtsi:741:		pinctrl-single,pins = <0x1ac  (PIN_INPUT_PULLUP | MUX_MODE0)>; };	/* mcasp0_ahclkx.mcasp0_ahclkx */
+./am335x-bone-common-universal.dtsi:797:		pinctrl-single,pins = <0x19c  (PIN_OUTPUT_PULLDOWN | MUX_MODE2)>; };	/* mcasp0_ahclkr.mcasp0_axr2 */
+./am335x-bone-common-universal.dtsi:817:		pinctrl-single,pins = <0x194  (PIN_OUTPUT_PULLUP | MUX_MODE0)>; };	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-bone-common-universal.dtsi:855:		pinctrl-single,pins = <0x190  (PIN_OUTPUT_PULLDOWN | MUX_MODE0)>; };	/* mcasp0_aclkx.mcasp0_aclkx */
+Binary file ./am335x-bone.dtb matches
+Binary file ./am335x-bonegreen.dtb matches
+Binary file ./am335x-bonegreen-overlay.dtb matches
+./am335x-cape-bbb-exp-c.dtsi:43:			0x1a4 0x2f	/* KEY_ENTER mcasp0_fxr.gpio3_19, INPUT | PULLDIS | MODE7 */
+./am335x-cape-bbb-exp-c.dtsi:63:	mcasp0_pins: pinmux_mcasp0_pins {
+./am335x-cape-bbb-exp-c.dtsi:65:			0x190 0x20      /* mcasp0_aclkx.mcasp0_aclkx, INPUT | MODE0 */
+./am335x-cape-bbb-exp-c.dtsi:66:			0x194 0x20      /* mcasp0_fsx.mcasp0_fsx, INPUT | MODE0 */
+./am335x-cape-bbb-exp-c.dtsi:67:			0x198 0x20      /* mcasp0_axr0.mcasp0_axr0, INPUT | MODE0 */
+./am335x-cape-bbb-exp-c.dtsi:68:			0x19c 0x22      /* mcasp0_ahclkr.mcasp0_axr2, INPUT | MODE2 */
+./am335x-cape-bbb-exp-c.dtsi:111:&mcasp0 {
+./am335x-cape-bbb-exp-c.dtsi:113:	pinctrl-0 = <&mcasp0_pins>;
+./am335x-cape-bbb-exp-c.dtsi:117:	op-mode = <0>;          /* MCASP_IIS_MODE */
+./am335x-cape-bbb-exp-c.dtsi:213:		ti,mcasp-controller = <&mcasp0>;
+./am335x-cape-bbb-exp-r.dtsi:43:			0x1a4 0x2f	/* KEY_ENTER mcasp0_fxr.gpio3_19, INPUT | PULLDIS | MODE7 */
+./am335x-cape-bbb-exp-r.dtsi:56:	mcasp0_pins: pinmux_mcasp0_pins {
+./am335x-cape-bbb-exp-r.dtsi:58:			0x190 0x20      /* mcasp0_aclkx.mcasp0_aclkx, INPUT | MODE0 */
+./am335x-cape-bbb-exp-r.dtsi:59:			0x194 0x20      /* mcasp0_fsx.mcasp0_fsx, INPUT | MODE0 */
+./am335x-cape-bbb-exp-r.dtsi:60:			0x198 0x20      /* mcasp0_axr0.mcasp0_axr0, INPUT | MODE0 */
+./am335x-cape-bbb-exp-r.dtsi:61:			0x19c 0x22      /* mcasp0_ahclkr.mcasp0_axr2, INPUT | MODE2 */
+./am335x-cape-bbb-exp-r.dtsi:90:&mcasp0 {
+./am335x-cape-bbb-exp-r.dtsi:92:	pinctrl-0 = <&mcasp0_pins>;
+./am335x-cape-bbb-exp-r.dtsi:96:	op-mode = <0>;          /* MCASP_IIS_MODE */
+./am335x-cape-bbb-exp-r.dtsi:206:		ti,mcasp-controller = <&mcasp0>;
+Binary file ./am335x-chiliboard.dtb matches
+Binary file ./am335x-evm.dtb matches
+./am335x-evm.dts:156:		ti,mcasp-controller = <&mcasp1>;
+./am335x-evm.dts:358:			0x1A0 (PIN_INPUT_PULLUP | MUX_MODE7)    /* mcasp0_aclkr.gpio3_18 */
+./am335x-evm.dts:392:			0x19C (PIN_INPUT | MUX_MODE7)		/* mcasp0_ahclkr.gpio3_17 */
+./am335x-evm.dts:393:			0x1AC (PIN_OUTPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkx.gpio3_21 */
+./am335x-evm.dts:465:			0x10c (PIN_INPUT_PULLDOWN | MUX_MODE4) /* mii1_crs.mcasp1_aclkx */
+./am335x-evm.dts:466:			0x110 (PIN_INPUT_PULLDOWN | MUX_MODE4) /* mii1_rxerr.mcasp1_fsx */
+./am335x-evm.dts:467:			0x108 (PIN_OUTPUT_PULLDOWN | MUX_MODE4) /* mii1_col.mcasp1_axr2 */
+./am335x-evm.dts:468:			0x144 (PIN_INPUT_PULLDOWN | MUX_MODE4) /* rmii1_ref_clk.mcasp1_axr3 */
+./am335x-evm.dts:474:			0x10c (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mii1_rx_dv.mcasp1_aclkx */
+./am335x-evm.dts:475:			0x110 (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mii1_txd3.mcasp1_fsx */
+./am335x-evm.dts:476:			0x108 (PIN_INPUT_PULLDOWN | MUX_MODE7) /* mii1_col.mcasp1_axr2 */
+./am335x-evm.dts:477:			0x144 (PIN_INPUT_PULLDOWN | MUX_MODE7) /* rmii1_ref_clk.mcasp1_axr3 */
+./am335x-evm.dts:712:&mcasp1 {
+./am335x-evm.dts:719:		op-mode = <0>;          /* MCASP_IIS_MODE */
+Binary file ./am335x-evmsk.dtb matches
+./am335x-evmsk.dts:147:		ti,mcasp-controller = <&mcasp1>;
+./am335x-evmsk.dts:306:			0x19c 0x4	/* mcasp0_ahclkr.ecap2_in_pwm2_out MODE4 */
+./am335x-evmsk.dts:312:			0x19c (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_ahclkr.ecap2_in_pwm2_out */
+./am335x-evmsk.dts:404:			0x1A0 (PIN_INPUT_PULLUP | MUX_MODE7)	/* mcasp0_aclkr.gpio3_18 */
+./am335x-evmsk.dts:422:	mcasp1_pins: mcasp1_pins {
+./am335x-evmsk.dts:424:			0x10c (PIN_INPUT_PULLDOWN | MUX_MODE4) /* mii1_crs.mcasp1_aclkx */
+./am335x-evmsk.dts:425:			0x110 (PIN_INPUT_PULLDOWN | MUX_MODE4) /* mii1_rxerr.mcasp1_fsx */
+./am335x-evmsk.dts:426:			0x108 (PIN_OUTPUT_PULLDOWN | MUX_MODE4) /* mii1_col.mcasp1_axr2 */
+./am335x-evmsk.dts:427:			0x144 (PIN_INPUT_PULLDOWN | MUX_MODE4) /* rmii1_ref_clk.mcasp1_axr3 */
+./am335x-evmsk.dts:704:&mcasp1 {
+./am335x-evmsk.dts:706:		pinctrl-0 = <&mcasp1_pins>;
+./am335x-evmsk.dts:710:		op-mode = <0>;          /* MCASP_IIS_MODE */
+Binary file ./am335x-lxm.dtb matches
+Binary file ./am335x-nano.dtb matches
+./am335x-nano.dts:158:			0x1a0 (PIN_INPUT_PULLUP | MUX_MODE7)	/* mcasp0_aclkr.gpio3[18] */
+Binary file ./am335x-pepper.dtb matches
+./am335x-pepper.dts:151:	ti,mcasp-controller = <&mcasp0>;
+./am335x-pepper.dts:159:&mcasp0 {
+./am335x-pepper.dts:164:	op-mode = <0>;	/* MCASP_ISS_MODE */
+./am335x-pepper.dts:179:			0x1AC (PIN_INPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_ahcklx.mcasp0_ahclkx */
+./am335x-pepper.dts:180:			0x194 (PIN_INPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_fsx.mcasp0_fsx */
+./am335x-pepper.dts:181:			0x190 (PIN_INPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_aclkx.mcasp0_aclkx */
+./am335x-pepper.dts:182:			0x198 (PIN_INPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_axr0.mcasp0_axr0 */
+./am335x-pepper.dts:183:			0x1A8 (PIN_INPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_axr1.mcasp0_axr1 */
+./am335x-som-common.dtsi:162:				0x198 (PIN_OUTPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_axr0.gpio3_20 */
+./am335x-som-common.dtsi:163:				0x1a8 (PIN_OUTPUT_PULLDOWN | MUX_MODE7)	/* mcasp0_axr1.gpio3_21 */
+./am335x-som-common.dtsi:164:				0x1a4 (PIN_OUTPUT_PULLDOWN | MUX_MODE7) /* mcasp0_fsr.gpio3[19], INPUT_PULLDOWN | MODE7 */
+./am335x-som-common.dtsi:300:				0x1A0 (PIN_INPUT_PULLUP | MUX_MODE7)	/* mcasp0_aclkr.gpio3_18 */
+./am33xx-clocks.dtsi:43:	mcasp0_fck: mcasp0_fck {
+./am33xx-clocks.dtsi:51:	mcasp1_fck: mcasp1_fck {
+./am33xx.dtsi:919:		mcasp0: mcasp@48038000 {
+./am33xx.dtsi:920:			compatible = "ti,am33xx-mcasp-audio";
+./am33xx.dtsi:921:			ti,hwmods = "mcasp0";
+./am33xx.dtsi:933:		mcasp1: mcasp@4803C000 {
+./am33xx.dtsi:934:			compatible = "ti,am33xx-mcasp-audio";
+./am33xx.dtsi:935:			ti,hwmods = "mcasp1";
+./am4372.dtsi:865:		mcasp0: mcasp@48038000 {
+./am4372.dtsi:866:			compatible = "ti,am33xx-mcasp-audio";
+./am4372.dtsi:867:			ti,hwmods = "mcasp0";
+./am4372.dtsi:879:		mcasp1: mcasp@4803C000 {
+./am4372.dtsi:880:			compatible = "ti,am33xx-mcasp-audio";
+./am4372.dtsi:881:			ti,hwmods = "mcasp1";
+Binary file ./am437x-gp-evm.dtb matches
+./am437x-gp-evm.dts:131:			sound-dai = <&mcasp1>;
+./am437x-gp-evm.dts:525:	mcasp1_pins: mcasp1_pins {
+./am437x-gp-evm.dts:527:			0x108 (PIN_OUTPUT_PULLDOWN | MUX_MODE4)	/* mii1_col.mcasp1_axr2 */
+./am437x-gp-evm.dts:528:			0x10c (PIN_INPUT_PULLDOWN | MUX_MODE4)	/* mii1_crs.mcasp1_aclkx */
+./am437x-gp-evm.dts:529:			0x110 (PIN_INPUT_PULLDOWN | MUX_MODE4)	/* mii1_rxerr.mcasp1_fsx */
+./am437x-gp-evm.dts:530:			0x144 (PIN_INPUT_PULLDOWN | MUX_MODE4)	/* rmii1_ref_clk.mcasp1_axr3 */
+./am437x-gp-evm.dts:534:	mcasp1_sleep_pins: mcasp1_sleep_pins {
+./am437x-gp-evm.dts:547:			0x1ac (PIN_INPUT | PULL_DISABLE | MUX_MODE9)	/* mcasp0_ahclkx.gpio0_3 */
+./am437x-gp-evm.dts:1205:&mcasp1 {
+./am437x-gp-evm.dts:1208:	pinctrl-0 = <&mcasp1_pins>;
+./am437x-gp-evm.dts:1209:	pinctrl-1 = <&mcasp1_sleep_pins>;
+./am437x-gp-evm.dts:1213:	op-mode = <0>; /* MCASP_IIS_MODE */
+Binary file ./am437x-gp-evm-hdmi.dtb matches
+./am437x-gp-evm-hdmi.dts:39:			sound-dai = <&mcasp1>;
+Binary file ./am437x-idk-evm.dtb matches
+Binary file ./am437x-sk-evm.dtb matches
+./am437x-sk-evm.dts:49:			sound-dai = <&mcasp1>;
+./am437x-sk-evm.dts:386:	mcasp1_pins: mcasp1_pins {
+./am437x-sk-evm.dts:388:			0x10c (PIN_INPUT_PULLDOWN | MUX_MODE4)	/* mii1_crs.mcasp1_aclkx */
+./am437x-sk-evm.dts:389:			0x110 (PIN_INPUT_PULLDOWN | MUX_MODE4)	/* mii1_rxerr.mcasp1_fsx */
+./am437x-sk-evm.dts:390:			0x108 (PIN_OUTPUT_PULLDOWN | MUX_MODE4)	/* mii1_col.mcasp1_axr2 */
+./am437x-sk-evm.dts:391:			0x144 (PIN_INPUT_PULLDOWN | MUX_MODE4)	/* rmii1_ref_clk.mcasp1_axr3 */
+./am437x-sk-evm.dts:821:&mcasp1 {
+./am437x-sk-evm.dts:824:	pinctrl-0 = <&mcasp1_pins>;
+Binary file ./am43x-epos-evm.dtb matches
+./am43x-epos-evm.dts:134:			sound-dai = <&mcasp1>;
+./am43x-epos-evm.dts:250:				0x190 (PIN_INPUT | MUX_MODE3)           /* mcasp0_aclkx.spi1_clk */
+./am43x-epos-evm.dts:251:				0x194 (PIN_OUTPUT | MUX_MODE3)           /* mcasp0_fsx.spi1_d0 */
+./am43x-epos-evm.dts:252:				0x198 (PIN_INPUT | MUX_MODE3)           /* mcasp0_axr0.spi1_d1 */
+./am43x-epos-evm.dts:253:				0x19c (PIN_OUTPUT | MUX_MODE3)          /* mcasp0_ahclkr.spi1_cs0 */
+./am43x-epos-evm.dts:379:		mcasp1_pins: mcasp1_pins {
+./am43x-epos-evm.dts:381:				0x1a0 (PIN_INPUT_PULLDOWN | MUX_MODE3) /* MCASP0_ACLKR/MCASP1_ACLKX */
+./am43x-epos-evm.dts:382:				0x1a4 (PIN_INPUT_PULLDOWN | MUX_MODE3) /* MCASP0_FSR/MCASP1_FSX */
+./am43x-epos-evm.dts:383:				0x1a8 (PIN_OUTPUT_PULLDOWN | MUX_MODE3)/* MCASP0_AXR1/MCASP1_AXR0 */
+./am43x-epos-evm.dts:384:				0x1ac (PIN_INPUT_PULLDOWN | MUX_MODE3) /* MCASP0_AHCLKX/MCASP1_AXR1 */
+./am43x-epos-evm.dts:388:		mcasp1_sleep_pins: mcasp1_sleep_pins {
+./am43x-epos-evm.dts:847:&mcasp1 {
+./am43x-epos-evm.dts:850:	pinctrl-0 = <&mcasp1_pins>;
+./am43x-epos-evm.dts:851:	pinctrl-1 = <&mcasp1_sleep_pins>;
+./am43x-epos-evm.dts:855:	op-mode = <0>;          /* MCASP_IIS_MODE */
+Binary file ./am43x-epos-evm-hdmi.dtb matches
+./am43x-epos-evm-hdmi.dts:39:			sound-dai = <&mcasp1>;
+./am43xx-clocks.dtsi:59:	mcasp0_fck: mcasp0_fck {
+./am43xx-clocks.dtsi:67:	mcasp1_fck: mcasp1_fck {
+Binary file ./am571x-idk.dtb matches
+Binary file ./am571x-idk-lcd-osd.dtb matches
+Binary file ./am572x-idk.dtb matches
+Binary file ./am572x-idk-lcd-osd.dtb matches
+Binary file ./am57xx-beagle-x15.dtb matches
+./am57xx-beagle-x15.dts:212:			sound-dai = <&mcasp3>;
+./am57xx-beagle-x15.dts:289:			0x2a4 (PIN_INPUT| MUX_MODE10)	/* mcasp1_aclkx.i2c3_sda */
+./am57xx-beagle-x15.dts:290:			0x2a8 (PIN_INPUT| MUX_MODE10)	/* mcasp1_fsx.i2c3_scl */
+./am57xx-beagle-x15.dts:802:&mcasp3 {
+./am57xx-beagle-x15.dts:806:	op-mode = <0>;	/* MCASP_IIS_MODE */
+Binary file ./am57xx-evm.dtb matches
+./da850.dtsi:280:		mcasp0: mcasp@01d00000 {
+./da850.dtsi:281:			compatible = "ti,da830-mcasp-audio";
+./da850-evm.dts:21:			mcasp0_pins: pinmux_mcasp0_pins {
+./da850-evm.dts:164:			sound-dai = <&mcasp0>;
+./da850-evm.dts:227:&mcasp0 {
+./da850-evm.dts:231:	pinctrl-0 = <&mcasp0_pins>;
+./da850-evm.dts:233:	op-mode = <0>;          /* MCASP_IIS_MODE */
+Binary file ./dra72-evm.dtb matches
+./dra72-evm.dts:158:			sound-dai = <&mcasp3>;
+./dra72-evm.dts:360:			0x2cc (PIN_OUTPUT | MUX_MODE14)		/* mcasp1_axr6.gpio5_8 - WLAN_EN */
+./dra72-evm.dts:366:			0x2c8 (PIN_INPUT_PULLUP | WAKEUP_EN | MUX_MODE14 ) /* mcasp1_axr5.gpio5_7 - WLAN_IRQ */
+./dra72-evm.dts:623:		 * VIN6_SEL_S0 is low, thus selecting McASP3 over VIN6
+./dra72-evm.dts:951:		bws = <DRA7_ATL_WS_MCASP2_FSX>;
+./dra72-evm.dts:952:		aws = <DRA7_ATL_WS_MCASP3_FSX>;
+./dra72-evm.dts:956:&mcasp3 {
+./dra72-evm.dts:963:	op-mode = <0>;          /* MCASP_IIS_MODE */
+Binary file ./dra72-evm-lcd-lg.dtb matches
+Binary file ./dra72-evm-lcd-osd.dtb matches
+./dra7.dtsi:1675:		mcasp3: mcasp@48468000 {
+./dra7.dtsi:1676:			compatible = "ti,dra7-mcasp-audio";
+./dra7.dtsi:1677:			ti,hwmods = "mcasp3";
+./dra7.dtsi:1686:			clocks = <&mcasp3_ahclkx_mux>;
+./dra7.dtsi:1691:		mcasp8: mcasp@4847c000 {
+./dra7.dtsi:1692:			compatible = "ti,dra7-mcasp-audio";
+./dra7.dtsi:1693:			ti,hwmods = "mcasp8";
+./dra7.dtsi:1702:			clocks = <&mcasp8_ahclkx_mux>;
+Binary file ./dra7-evm.dtb matches
+./dra7-evm.dts:152:			sound-dai = <&mcasp3>;
+./dra7-evm.dts:190:		mcasp-gpio = <&mcasp8>;
+./dra7-evm.dts:288:			/* this pin is used as a GPIO via mcasp */
+./dra7-evm.dts:289:			0x2fc   (PIN_OUTPUT | MUX_MODE1) /* mcasp8_axr2 */
+./dra7-evm.dts:1164:		bws = <DRA7_ATL_WS_MCASP2_FSX>;
+./dra7-evm.dts:1165:		aws = <DRA7_ATL_WS_MCASP3_FSX>;
+./dra7-evm.dts:1169:&mcasp3 {
+./dra7-evm.dts:1176:	op-mode = <0>;          /* MCASP_IIS_MODE */
+./dra7-evm.dts:1186:&mcasp8 {
+Binary file ./dra7-evm-lcd-lg.dtb matches
+Binary file ./dra7-evm-lcd-osd.dtb matches
+./dra7xx-clocks.dtsi:806:	mcasp1_ahclkr_mux: mcasp1_ahclkr_mux {
+./dra7xx-clocks.dtsi:814:	mcasp1_ahclkx_mux: mcasp1_ahclkx_mux {
+./dra7xx-clocks.dtsi:822:	mcasp1_aux_gfclk_mux: mcasp1_aux_gfclk_mux {
+./dra7xx-clocks.dtsi:1775:	mcasp2_ahclkr_mux: mcasp2_ahclkr_mux {
+./dra7xx-clocks.dtsi:1783:	mcasp2_ahclkx_mux: mcasp2_ahclkx_mux {
+./dra7xx-clocks.dtsi:1791:	mcasp2_aux_gfclk_mux: mcasp2_aux_gfclk_mux {
+./dra7xx-clocks.dtsi:1799:	mcasp3_ahclkx_mux: mcasp3_ahclkx_mux {
+./dra7xx-clocks.dtsi:1807:	mcasp3_aux_gfclk_mux: mcasp3_aux_gfclk_mux {
+./dra7xx-clocks.dtsi:1815:	mcasp4_ahclkx_mux: mcasp4_ahclkx_mux {
+./dra7xx-clocks.dtsi:1823:	mcasp4_aux_gfclk_mux: mcasp4_aux_gfclk_mux {
+./dra7xx-clocks.dtsi:1831:	mcasp5_ahclkx_mux: mcasp5_ahclkx_mux {
+./dra7xx-clocks.dtsi:1839:	mcasp5_aux_gfclk_mux: mcasp5_aux_gfclk_mux {
+./dra7xx-clocks.dtsi:1847:	mcasp6_ahclkx_mux: mcasp6_ahclkx_mux {
+./dra7xx-clocks.dtsi:1855:	mcasp6_aux_gfclk_mux: mcasp6_aux_gfclk_mux {
+./dra7xx-clocks.dtsi:1863:	mcasp7_ahclkx_mux: mcasp7_ahclkx_mux {
+./dra7xx-clocks.dtsi:1871:	mcasp7_aux_gfclk_mux: mcasp7_aux_gfclk_mux {
+./dra7xx-clocks.dtsi:1879:	mcasp8_ahclkx_mux: mcasp8_ahclkx_mux {
+./dra7xx-clocks.dtsi:1887:	mcasp8_aux_gfclk_mux: mcasp8_aux_gfclk_mux {
+./omap44xx-clocks.dtsi:497:	mcasp_sync_mux_ck: mcasp_sync_mux_ck {
+./omap44xx-clocks.dtsi:505:	func_mcasp_abe_gfclk: func_mcasp_abe_gfclk {
+./omap44xx-clocks.dtsi:508:		clocks = <&mcasp_sync_mux_ck>, <&pad_clks_ck>, <&slimbus_clk>;
+./omap4-var-om44customboard.dtsi:84:	mcasp_pins: pinmux_mcsasp_pins {
+./omap4-var-om44customboard.dtsi:86:			OMAP4_IOPAD(0x0f8, PIN_OUTPUT | MUX_MODE2)		/*  mcbsp2_dr.abe_mcasp_axr */
+./omap54xx-clocks.dtsi:451:	mcasp_sync_mux_ck: mcasp_sync_mux_ck {
+./omap54xx-clocks.dtsi:459:	mcasp_gfclk: mcasp_gfclk {
+./omap54xx-clocks.dtsi:462:		clocks = <&mcasp_sync_mux_ck>, <&pad_clks_ck>, <&slimbus_clk>;
+Binary file ./omap5-cm-t54.dtb matches
+Binary file ./omap5-sbc-t54.dtb matches
+Binary file ./omap5-uevm.dtb matches

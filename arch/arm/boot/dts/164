@@ -1,0 +1,146 @@
+./am335x-arduino-tre.dts:285:			0x164 0x12	/* SS1	 OUTPUT_PULLUP | MODE0 */
+./am335x-bone-argus.dtsi:82:			0x164 (PIN_OUTPUT_PULLUP | MUX_MODE7) /* ecap0_in_pwm0_out.gpio0_7 */
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:66:			/*0x164 0x0F  spi1_cs0, GPIO3_17, P9_28, PULL_UP, change from MPU6000 CS to MS5803 CS for SMT*/
+./am335x-boneblack-forSMT-2nd-new-board-CH5678.dts:107:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT.dts:99:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT.dts.imu:99:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT.dts.new:99:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dts:99:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT-G1-multi-pwm-7CH.dts:99:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT-G2.dts:58:			/*0x164 0x0F   ecap0_in_pwm0_out, GPIO0_7, P9_42A */
+./am335x-boneblack-forSMT-multi-pwm.dts:100:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT-spidev1.0.dts:99:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-boneblack-forSMT-spi-test.dts:99:				0x164 0x37      /* P9_42 MS5611 CS */
+./am335x-bone-common-universal.dtsi:900:		pinctrl-single,pins = <0x164  0x27>; };     /* Mode 7, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:902:		pinctrl-single,pins = <0x164  0x2F>; };     /* Mode 7, RxActive */
+./am335x-bone-common-universal.dtsi:904:		pinctrl-single,pins = <0x164  0x37>; };     /* Mode 7, Pull-Up, RxActive */
+./am335x-bone-common-universal.dtsi:906:		pinctrl-single,pins = <0x164  0x27>; };     /* Mode 7, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:908:		pinctrl-single,pins = <0x164  0x20>; };     /* Mode 0, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:910:		pinctrl-single,pins = <0x164  0x21>; };     /* Mode 1, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:912:		pinctrl-single,pins = <0x164  0x22>; };     /* Mode 2, Pull-Down, RxActive */
+./am335x-bone-common-universal.dtsi:914:		pinctrl-single,pins = <0x164  0x24>; };     /* Mode 4, Pull-Down, RxActive */
+./am335x-cape-bbb-exp-c.dtsi:42:			0x164 0x2f	/* KEY_LEFT ecap0_in_pwm0_out.gpio0_7, INPUT | PULLDIS | MODE7 */
+./am335x-cape-bbb-exp-r.dtsi:42:			0x164 0x2f	/* KEY_LEFT ecap0_in_pwm0_out.gpio0_7, INPUT | PULLDIS | MODE7 */
+./am335x-evm.dts:288:			0x164 0x0	/* eCAP0_in_PWM0_out.eCAP0_in_PWM0_out MODE0 */
+./am335x-evm.dts:294:			0x164  (PIN_INPUT_PULLDOWN | MUX_MODE7)	/* eCAP0_in_PWM0_out.eCAP0_in_PWM0_out */
+./am335x-evmsk.dts:195:			0x164 (PIN_OUTPUT | MUX_MODE7)	/* ecap0_in_pwm0_out.gpio0_7 */
+./am335x-nano.dts:129:			0x164 (PIN_OUTPUT | MUX_MODE1)		/* ecap0_in_pwm0_out.uart3_txd */
+./am335x-pepper.dts:650:			0x164 (PIN_INPUT_PULLUP | MUX_MODE7)	/* gpmc_a8.gpio0_7 */
+./am335x-som-common.dtsi:335:				0x164 0x0       /* eCAP0_in_PWM0_out.eCAP0_in_PWM0_out MODE0 */
+./am335x-som-common.dtsi:341:				0x164  (PULL_DISABLE | MUX_MODE7)       /* eCAP0_in_PWM0_out.eCAP0_in_PWM0_out */
+./am437x-gp-evm.dts:237:			0x164 MUX_MODE0       /* eCAP0_in_PWM0_out.eCAP0_in_PWM0_out MODE0 */
+./am437x-gp-evm.dts:243:			0x164 (PIN_INPUT_PULLDOWN | MUX_MODE7)
+./am437x-idk-evm.dts:176:			0x164 (PIN_OUTPUT | MUX_MODE0) /* ecap0_in_pwm0_out.ecap0_in_pwm0_out */
+./am437x-sk-evm.dts:204:			0x164 (PIN_OUTPUT | MUX_MODE0) /* eCAP0_in_PWM0_out.eCAP0_in_PWM0_out */
+./am43x-epos-evm.dts:228:				0x164 MUX_MODE0         /* eCAP0_in_PWM0_out.eCAP0_in_PWM0_out MODE0 */
+./bcm-cygnus.dtsi:74:		      <0x0301d164 0x20>;
+./dra7xx-clocks.dtsi:291:		reg = <0x0160>, <0x0164>, <0x016c>, <0x0168>;
+./dra7xx-clocks.dtsi:1119:		reg = <0x0164>;
+./dra7xx-clocks.dtsi:1444:		reg = <0x0164>;
+./hi3620-hi4511.dts:116:					0x164 0x2	/* UART3_RXD & UART3_TXD (IOMG86) */
+./hi3620-hi4511.dts:122:					0x164 0x1	/* GPIO (IOMG86) */
+./imx25-pinfunc.h:373:#define MX25_PAD_CSPI1_SS1__CSPI1_SS1		0x164 0x35c 0x000 0x10 0x000
+./imx25-pinfunc.h:374:#define MX25_PAD_CSPI1_SS1__I2C3_DAT		0x164 0x35C 0x528 0x11 0x001
+./imx25-pinfunc.h:375:#define MX25_PAD_CSPI1_SS1__UART3_RTS		0x164 0x35c 0x000 0x12 0x000
+./imx25-pinfunc.h:376:#define MX25_PAD_CSPI1_SS1__GPIO_1_17		0x164 0x35c 0x000 0x15 0x000
+./imx28-evk.dts:141:							hfront-porch = <164>;
+./imx35-pinfunc.h:326:#define MX35_PAD_TX2_RX3__ESAI_TX2_RX3				0x164 0x5a8 0x000 0x0 0x0
+./imx35-pinfunc.h:327:#define MX35_PAD_TX2_RX3__I2C3_SDA				0x164 0x5a8 0x920 0x1 0x0
+./imx35-pinfunc.h:328:#define MX35_PAD_TX2_RX3__EMI_NANDF_CE2				0x164 0x5a8 0x000 0x3 0x0
+./imx35-pinfunc.h:329:#define MX35_PAD_TX2_RX3__GPIO1_13				0x164 0x5a8 0x000 0x5 0x0
+./imx35-pinfunc.h:330:#define MX35_PAD_TX2_RX3__IPU_CSI_D_5				0x164 0x5a8 0x944 0x6 0x0
+./imx35-pinfunc.h:331:#define MX35_PAD_TX2_RX3__KPP_COL_0				0x164 0x5a8 0x950 0x7 0x1
+./imx50-pinfunc.h:441:#define MX50_PAD_SD3_CMD__ESDHC3_CMD				0x164 0x444 0x000 0x0 0x0
+./imx50-pinfunc.h:442:#define MX50_PAD_SD3_CMD__GPIO5_18				0x164 0x444 0x000 0x1 0x0
+./imx50-pinfunc.h:443:#define MX50_PAD_SD3_CMD__EIM_NANDF_WRN				0x164 0x444 0x000 0x2 0x0
+./imx50-pinfunc.h:444:#define MX50_PAD_SD3_CMD__SSP_CMD				0x164 0x444 0x000 0x3 0x0
+./imx51-pinfunc.h:301:#define MX51_PAD_NANDF_D11__FEC_RX_DV			0x164 0x54c 0x96c 0x2 0x0
+./imx51-pinfunc.h:302:#define MX51_PAD_NANDF_D11__GPIO3_29			0x164 0x54c 0x000 0x3 0x0
+./imx51-pinfunc.h:303:#define MX51_PAD_NANDF_D11__NANDF_D11			0x164 0x54c 0x000 0x0 0x0
+./imx51-pinfunc.h:304:#define MX51_PAD_NANDF_D11__PATA_DATA11			0x164 0x54c 0x000 0x1 0x0
+./imx51-pinfunc.h:305:#define MX51_PAD_NANDF_D11__SD3_DATA3			0x164 0x54c 0x948 0x5 0x1
+./imx53-pinfunc.h:585:#define MX53_PAD_EIM_A22__EMI_WEIM_A_22				0x164 0x4b0 0x000 0x0 0x0
+./imx53-pinfunc.h:586:#define MX53_PAD_EIM_A22__GPIO2_16				0x164 0x4b0 0x000 0x1 0x0
+./imx53-pinfunc.h:587:#define MX53_PAD_EIM_A22__IPU_DISP1_DAT_17			0x164 0x4b0 0x000 0x2 0x0
+./imx53-pinfunc.h:588:#define MX53_PAD_EIM_A22__IPU_CSI1_D_17				0x164 0x4b0 0x000 0x3 0x0
+./imx53-pinfunc.h:589:#define MX53_PAD_EIM_A22__SRC_BT_CFG1_7				0x164 0x4b0 0x000 0x7 0x0
+./imx6dl-pinfunc.h:418:#define MX6QDL_PAD_EIM_D24__EIM_DATA24              0x164 0x534 0x000 0x0 0x0
+./imx6dl-pinfunc.h:419:#define MX6QDL_PAD_EIM_D24__ECSPI4_SS2              0x164 0x534 0x000 0x1 0x0
+./imx6dl-pinfunc.h:420:#define MX6QDL_PAD_EIM_D24__UART3_TX_DATA           0x164 0x534 0x000 0x2 0x0
+./imx6dl-pinfunc.h:421:#define MX6QDL_PAD_EIM_D24__UART3_RX_DATA           0x164 0x534 0x90c 0x2 0x0
+./imx6dl-pinfunc.h:422:#define MX6QDL_PAD_EIM_D24__ECSPI1_SS2              0x164 0x534 0x7ec 0x3 0x0
+./imx6dl-pinfunc.h:423:#define MX6QDL_PAD_EIM_D24__ECSPI2_SS2              0x164 0x534 0x000 0x4 0x0
+./imx6dl-pinfunc.h:424:#define MX6QDL_PAD_EIM_D24__GPIO3_IO24              0x164 0x534 0x000 0x5 0x0
+./imx6dl-pinfunc.h:425:#define MX6QDL_PAD_EIM_D24__AUD5_RXFS               0x164 0x534 0x7bc 0x6 0x1
+./imx6dl-pinfunc.h:426:#define MX6QDL_PAD_EIM_D24__UART1_DTR_B             0x164 0x534 0x000 0x7 0x0
+./imx6dl-pinfunc.h:427:#define MX6QDL_PAD_EIM_D24__EPDC_SDCE7              0x164 0x534 0x000 0x8 0x0
+./imx6q-pinfunc.h:405:#define MX6QDL_PAD_DI0_PIN2__IPU1_DI0_PIN02         0x164 0x478 0x000 0x0 0x0
+./imx6q-pinfunc.h:406:#define MX6QDL_PAD_DI0_PIN2__IPU2_DI0_PIN02         0x164 0x478 0x000 0x1 0x0
+./imx6q-pinfunc.h:407:#define MX6QDL_PAD_DI0_PIN2__AUD6_TXD               0x164 0x478 0x000 0x2 0x0
+./imx6q-pinfunc.h:408:#define MX6QDL_PAD_DI0_PIN2__GPIO4_IO18             0x164 0x478 0x000 0x5 0x0
+./imx6sl-evk.dts:565:				hfront-porch = <164>;
+./imx6sl-pinfunc.h:504:#define MX6SL_PAD_I2C2_SCL__I2C2_SCL               0x164 0x454 0x724 0x0 0x1
+./imx6sl-pinfunc.h:505:#define MX6SL_PAD_I2C2_SCL__AUD4_RXFS              0x164 0x454 0x5f0 0x1 0x0
+./imx6sl-pinfunc.h:506:#define MX6SL_PAD_I2C2_SCL__SPDIF_IN               0x164 0x454 0x7f0 0x2 0x1
+./imx6sl-pinfunc.h:507:#define MX6SL_PAD_I2C2_SCL__FEC_TX_DATA1           0x164 0x454 0x000 0x3 0x0
+./imx6sl-pinfunc.h:508:#define MX6SL_PAD_I2C2_SCL__SD3_WP                 0x164 0x454 0x84c 0x4 0x2
+./imx6sl-pinfunc.h:509:#define MX6SL_PAD_I2C2_SCL__GPIO3_IO14             0x164 0x454 0x000 0x5 0x0
+./imx6sl-pinfunc.h:510:#define MX6SL_PAD_I2C2_SCL__ECSPI1_RDY             0x164 0x454 0x680 0x6 0x0
+./imx6sx-pinfunc.h:815:#define MX6SX_PAD_NAND_DATA05__RAWNAND_DATA05                     0x0164 0x04AC 0x0000 0x0 0x0
+./imx6sx-pinfunc.h:816:#define MX6SX_PAD_NAND_DATA05__USDHC2_DATA5                       0x0164 0x04AC 0x0000 0x1 0x0
+./imx6sx-pinfunc.h:817:#define MX6SX_PAD_NAND_DATA05__QSPI2_B_DQS                        0x0164 0x04AC 0x0000 0x2 0x0
+./imx6sx-pinfunc.h:818:#define MX6SX_PAD_NAND_DATA05__UART3_CTS_B                        0x0164 0x04AC 0x0000 0x3 0x0
+./imx6sx-pinfunc.h:819:#define MX6SX_PAD_NAND_DATA05__AUDMUX_AUD4_RXC                    0x0164 0x04AC 0x064C 0x4 0x0
+./imx6sx-pinfunc.h:820:#define MX6SX_PAD_NAND_DATA05__GPIO4_IO_9                         0x0164 0x04AC 0x0000 0x5 0x0
+./imx6sx-pinfunc.h:821:#define MX6SX_PAD_NAND_DATA05__WEIM_AD_5                          0x0164 0x04AC 0x0000 0x6 0x0
+./imx6sx-pinfunc.h:822:#define MX6SX_PAD_NAND_DATA05__TPSMP_HDATA_12                     0x0164 0x04AC 0x0000 0x7 0x0
+./imx6sx-pinfunc.h:823:#define MX6SX_PAD_NAND_DATA05__ANATOP_USBPHY2_TSTO_RX_DISCON_DET  0x0164 0x04AC 0x0000 0x8 0x0
+./imx6sx-pinfunc.h:824:#define MX6SX_PAD_NAND_DATA05__SDMA_DEBUG_CORE_STATE_1            0x0164 0x04AC 0x0000 0x9 0x0
+./imx6sx-sdb.dtsi:226:				hfront-porch = <164>;
+./k2g.dtsi:112:			interrupts = <GIC_SPI 164 IRQ_TYPE_EDGE_RISING>;
+./keystone-clocks.dtsi:58:		reg = <0x02310164 4>;
+./mcasp:249:./am335x-pepper.dts:164:	op-mode = <0>;	/* MCASP_ISS_MODE */
+./mcasp:257:./am335x-som-common.dtsi:164:				0x1a4 (PIN_OUTPUT_PULLDOWN | MUX_MODE7) /* mcasp0_fsr.gpio3[19], INPUT_PULLDOWN | MODE7 */
+./mcasp:332:./da850-evm.dts:164:			sound-dai = <&mcasp0>;
+./mcasp:360:./dra7-evm.dts:1164:		bws = <DRA7_ATL_WS_MCASP2_FSX>;
+./omap3-cm-t3530.dts:33:			OMAP3_CORE1_IOPAD(0x2164, PIN_OUTPUT | MUX_MODE1)		/* sdmmc2_dat4.sdmmc2_dir_dat0 */
+./omap3-cm-t3730.dts:63:			OMAP3_CORE1_IOPAD(0x2164, PIN_INPUT | MUX_MODE4)	/* sdmmc2_dat4.gpio_136 */
+./omap3-devkit8000.dts:39:			gpios = <&gpio6 4 GPIO_ACTIVE_HIGH>;	/* 164 -> LED3 */
+./omap3-ha-lcd.dts:32:			OMAP3_CORE1_IOPAD(0x2164, PIN_INPUT_PULLUP | MUX_MODE4)	/* gpio_136, Touchscreen IRQ */
+./omap3-igep0030-rev-g.dts:32:			OMAP3_CORE1_IOPAD(0x2164, PIN_INPUT | MUX_MODE4)	/* sdmmc2_dat4.gpio_136 - W_IRQ */
+./omap3-lilly-dbb056.dts:84:			OMAP3_CORE1_IOPAD(0x2164, PIN_OUTPUT | MUX_MODE1)   /* sdmmc2_dat4.sdmmc2_dir_dat0 */
+./omap3-lilly-dbb056.dts:89:			OMAP3_CORE1_IOPAD(0x219c, PIN_INPUT_PULLUP | MUX_MODE4)   /* uart3_rts_sd.gpio_164 -> cd */
+./omap3-lilly-dbb056.dts:117:	cd-gpios = <&gpio6 4 0>;   /* gpio_164 */
+./omap3-n900.dts:168:			OMAP3_CORE1_IOPAD(0x219c, PIN_OUTPUT | MUX_MODE4)		/* uart3_rts_sd.gpio_164 */
+./omap3-n900.dts:789:		reset-gpios = <&gpio6 4 GPIO_ACTIVE_HIGH>;	/* gpio164 */
+./omap3-overo-base.dtsi:78:		gpio = <&gpio6 4 GPIO_ACTIVE_HIGH>;		/* gpio_164: BT nReset */
+./omap3-overo-base.dtsi:131:			OMAP3_CORE1_IOPAD(0x219c, PIN_OUTPUT | MUX_MODE4)		/* uart3_rts_sd.gpio_164 */
+./omap3-pandora-common.dtsi:225:			OMAP3_CORE1_IOPAD(0x2164, PIN_OUTPUT_PULLUP | MUX_MODE1)	/* sdmmc2_dat4.sdmmc2_dirdat0 */
+./omap44xx-clocks.dtsi:400:		reg = <0x0160>, <0x0164>, <0x016c>, <0x0168>;
+./omap44xx-clocks.dtsi:865:		reg = <0x0164>;
+./omap4-var-om44customboard.dtsi:93:			OMAP4_IOPAD(0x164, PIN_OUTPUT | MUX_MODE5)		/* dispc2_data22 */
+./omap54xx-clocks.dtsi:362:		reg = <0x0160>, <0x0164>, <0x016c>, <0x0168>;
+./omap54xx-clocks.dtsi:669:		reg = <0x0164>;
+./omap5-uevm.dts:222:			0x164 (PIN_INPUT | MUX_MODE1)		/*  mcspi4_clk */
+./qcom-msm8960-cdp.dts:10:		gsbi@16400000 {
+./qcom-msm8960-cdp.dts:13:			serial@16440000 {
+./qcom-msm8960.dtsi:130:		gsbi5: gsbi@16400000 {
+./qcom-msm8960.dtsi:133:			reg = <0x16400000 0x100>;
+./qcom-msm8960.dtsi:142:			serial@16440000 {
+./qcom-msm8960.dtsi:144:				reg = <0x16440000 0x1000>,
+./qcom-msm8960.dtsi:145:				      <0x16400000 0x1000>;
+./r7s72100.dtsi:338:			     <0 164 IRQ_TYPE_LEVEL_HIGH>;
+./rk3288-evb.dtsi:44:			160 161 162 163 164 165 166 167
+./socfpga.dtsi:566:				interrupts = <0 164 4>;
+./ste-href-family-pinctrl.dtsi:651:						"GPIO164_B21"; /* I0 */
+./ste-href-family-pinctrl.dtsi:677:						"GPIO164_B21"; /* I0 */
+./ste-snowball.dts:487:						"GPIO164_B21"; /* ACCEL_IRQ2 */
+./sun7i-a20.dtsi:487:		gmac_tx_clk: clk@01c20164 {
+./sun7i-a20.dtsi:490:			reg = <0x01c20164 0x4>;
+./tegra124.dtsi:308:		reg = <0x0 0x70000868 0x0 0x164>, /* Pad control registers */
+./tegra124-nyan.dtsi:462:			 160 161 162 163 164 165 166 167
+./vf610-pinfunc.h:572:#define VF610_PAD_PTD10__GPIO_89		0x164 0x000 ALT0 0x0
+./vf610-pinfunc.h:573:#define VF610_PAD_PTD10__QSPI0_B_DATA2		0x164 0x000 ALT1 0x0
+./vf610-pinfunc.h:574:#define VF610_PAD_PTD10__DSPI3_CS0		0x164 0x000 ALT2 0x0
+./vf610-pinfunc.h:575:#define VF610_PAD_PTD10__FB_AD5			0x164 0x000 ALT4 0x0
+./vf610-pinfunc.h:576:#define VF610_PAD_PTD10__DCU1_B1		0x164 0x000 ALT7 0x0
