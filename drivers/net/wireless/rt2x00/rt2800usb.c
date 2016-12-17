@@ -153,8 +153,8 @@ static bool rt2800usb_tx_sta_fifo_read_completed(struct rt2x00_dev *rt2x00dev,
 	bool valid;
 
 	if (urb_status) {
-		rt2x00_warn(rt2x00dev, "TX status read failed %d\n",
-			    urb_status);
+		// rt2x00_warn(rt2x00dev, "TX status read failed %d\n",
+			    // urb_status);
 
 		goto stop_reading;
 	}
