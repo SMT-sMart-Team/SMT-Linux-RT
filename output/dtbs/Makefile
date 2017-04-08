@@ -423,7 +423,15 @@ dtb-$(CONFIG_SOC_AM33XX) += \
 	am335x-boneblack-spi0.dtb \
 	am335x-boneblack-replicape.dtb \
 	am335x-boneblack-bbbmini.dtb \
+    am335x-boneblack-forSMT-G2.dtb \
+    am335x-boneblack-forSMT-G2-SY.dtb \
     am335x-boneblack-forSMT.dtb \
+    am335x-boneblack-forSMT-multi-pwm.dtb \
+    am335x-boneblack-forSMT-G1-multi-pwm-7CH.dtb \
+    am335x-boneblack-forSMT-G1-multi-pwm-7CH-adis-iio.dtb \
+	am335x-boneblack-forSMT-2nd-new-board-CH5678.dtb \
+	am335x-boneblack-forSMT-spi-test.dtb \
+    am335x-boneblack-forSMT-spidev1.0.dtb \
 	am335x-boneblack-overlay.dtb \
 	am335x-boneblack-nhdmi-overlay.dtb \
 	am335x-boneblack-hdmi-overlay.dtb \
