@@ -4,8 +4,8 @@ date
 echo "==================================================================================="
 echo "start execute $0"
 echo "make clean"
-make distclean 
-make clean 
+# make distclean 
+# make clean 
 echo "make .config"
 # make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bb.org_defconfig 
 cp apm_defconfig .config

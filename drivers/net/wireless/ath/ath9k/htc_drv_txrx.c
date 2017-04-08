@@ -502,7 +502,8 @@ static void ath9k_htc_tx_process(struct ath9k_htc_priv *priv,
 
 send_mac80211:
 	spin_lock_bh(&priv->tx.tx_lock);
-	if (WARN_ON(--priv->tx.queued_cnt < 0))
+	// if (WARN_ON(--priv->tx.queued_cnt < 0))
+	if (--priv->tx.queued_cnt < 0)
 		priv->tx.queued_cnt = 0;
 	spin_unlock_bh(&priv->tx.tx_lock);
 
