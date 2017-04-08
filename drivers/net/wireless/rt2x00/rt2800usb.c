@@ -145,7 +145,7 @@ static bool rt2800usb_txstatus_timeout(struct rt2x00_dev *rt2x00dev)
 	return false;
 }
 
-#define TXSTATUS_READ_INTERVAL 1000000
+#define TXSTATUS_READ_INTERVAL 10000000
 
 static bool rt2800usb_tx_sta_fifo_read_completed(struct rt2x00_dev *rt2x00dev,
 						 int urb_status, u32 tx_status)
