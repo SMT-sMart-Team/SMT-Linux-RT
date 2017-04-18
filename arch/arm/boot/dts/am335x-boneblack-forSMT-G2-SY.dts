@@ -45,7 +45,7 @@
 
             /* rcin5678 */
             0x1ac 0x2E     /*mcasp0_ahclkr, pr1_pru0_pru_r31_7, P9_25, PULL_DOWN, add for rcin_ch5*/
-            0x1a4 0x2E     /* mcasp0_fsr, pr1_pru0_pru_r31_5, P9_27, PULL_DOWN, add for rcin_ch6*/
+            /* 0x1a4 0x2E     mcasp0_fsr, pr1_pru0_pru_r31_5, P9_27, PULL_DOWN, add for rcin_ch6*/
             0x19c 0x2E     /*mcasp0_axr1, pr1_pru0_pru_r31_3, P9_27, PULL_DOWN, add for rcin_ch7*/
             0x1a0 0x2E      /*mcasp0_aclkr, pr1_pru0_pru_r31_4, P9_27, PULL_DOWN, add for rcin_ch8*/
 
