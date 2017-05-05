@@ -215,6 +215,6 @@
 	pinctrl-0 = <&i2c1_pins>;
 
 	status = "okay";
-	clock-frequency = <400000>;
+	clock-frequency = <100000>;
 };
 
