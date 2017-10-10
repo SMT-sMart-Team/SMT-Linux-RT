@@ -51,6 +51,12 @@
 			linux,default-trigger = "mmc1";
 			default-state = "off";
 		};
+
+		led@6 {
+			label = "smt:gps_en";
+			gpios = <&gpio2 4 GPIO_ACTIVE_HIGH>;
+			default-state = "on";
+		};
 	};
 
 	vmmcsd_fixed: fixedregulator@0 {
@@ -71,6 +77,7 @@
 			0x58 (PIN_OUTPUT_PULLUP | MUX_MODE7)	/* gpmc_a6.gpio1_22 */
 			0x5c (PIN_OUTPUT_PULLDOWN | MUX_MODE7)	/* gpmc_a7.gpio1_23 */
 			0x60 (PIN_OUTPUT_PULLUP | MUX_MODE7)	/* gpmc_a8.gpio1_24 */
+			0x98 (PIN_OUTPUT_PULLUP | MUX_MODE7)	/* gpmc_wen.gpio2_4 */
 		>;
 	};
 
