@@ -351,7 +351,7 @@ static int mcspi_wait_for_reg_bit(void __iomem *reg, unsigned long bit)
 {
 	unsigned long timeout;
 
-	timeout = jiffies + msecs_to_jiffies(1000);
+	timeout = jiffies + msecs_to_jiffies(2000);
 	while (!(readl_relaxed(reg) & bit)) {
 		if (time_after(jiffies, timeout)) {
 			if (!(readl_relaxed(reg) & bit))
@@ -553,6 +553,7 @@ omap2_mcspi_txrx_dma(struct spi_device *spi, struct spi_transfer *xfer)
 	void __iomem            *irqstat_reg;
 	int			wait_res;
 
+#if 0
 	mcspi = spi_master_get_devdata(spi->master);
 	mcspi_dma = &mcspi->dma_channels[spi->chip_select];
 	l = mcspi_cached_chconf0(spi);
@@ -632,6 +633,7 @@ omap2_mcspi_txrx_dma(struct spi_device *spi, struct spi_transfer *xfer)
 				dev_err(&spi->dev, "EOT timed out\n");
 		}
 	}
+#endif
 	return count;
 }
 
@@ -958,7 +960,14 @@ static int omap2_mcspi_request_dma(struct spi_device *spi)
 	sig = mcspi_dma->dma_rx_sync_dev;
 
 	if (mcspi->pio_mode == MCSPI_PIO_MODE)
+    {
+		dev_warn(&spi->dev, "not using DMA for McSPI\n");
 		goto no_dma;
+    }
+    else
+    {
+		dev_warn(&spi->dev, "now using DMA for McSPI 1\n");
+    }
 
 	mcspi_dma->dma_rx = dma_request_slave_channel_compat_reason(mask,
 					omap_dma_filter_fn, &sig, &master->dev,
@@ -1071,6 +1080,8 @@ static void omap2_mcspi_work(struct omap2_mcspi *mcspi, struct spi_message *m)
 	 * channel" master mode.  As a side effect, we need to manage the
 	 * chipselect with the FORCE bit ... CS != channel enable.
 	 */
+
+    return ;
 
 	struct spi_device		*spi;
 	struct spi_transfer		*t = NULL;
@@ -1381,7 +1392,15 @@ static int omap2_mcspi_probe(struct platform_device *pdev)
 		if (of_get_property(node, "ti,pindir-d0-out-d1-in", NULL))
 			mcspi->pin_dir = MCSPI_PINDIR_D0_OUT_D1_IN;
 		if (of_get_property(node, "ti,pio-mode", NULL))
+        {
 			mcspi->pio_mode = MCSPI_PIO_MODE;
+		    dev_dbg(&pdev->dev, "node, ti,pio-mode\n");
+        }
+        else
+        {
+		    dev_dbg(&pdev->dev, "node, ti,dma-mode\n");
+        }
+
 	} else {
 		pdata = dev_get_platdata(&pdev->dev);
 		master->num_chipselect = pdata->num_cs;

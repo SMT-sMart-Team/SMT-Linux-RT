@@ -26,7 +26,7 @@ cp arch/arm/boot/dts/Makefile `pwd`/output/dtbs
 # cp arch/arm/boot/dts/am335x-bone-common.dtsi `pwd`/output/dtbs
 
 echo "tar zImage dtbs & modules"
-cd `pwd`/output; tar -czvf ../`date +%Y%m%d`_kernel-delte-rt2800-msg-add-pwmout.tar.gz *
+cd `pwd`/output; tar -czvf ../`date +%Y%m%d`_kernel-disable-console.tar.gz *
 
 echo "end execute $0"
 echo "==================================================================================="
