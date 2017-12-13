@@ -111,10 +111,10 @@
 				0x038 0x37      /* HMC5983 CS, P8_16 */
 				0x08c 0x37      /* M8T CS, P8_18 */
                 /*Control enable*/
-                0x094 0x27      /* P8_8, add for VCC_3V3_EN*/
-                0x09c 0x27      /* P8_9, add for VCC_3V3_SENSOR_EN */
-                0x098 0x27      /* P8_10, add for VCC_3V3_GPS_EN*/
-                0x078 0x27      /* P9_12, add for OUTPUT_EN */
+                0x094 0x37      /* P8_8, add for VCC_3V3_EN*/
+                0x09c 0x37      /* P8_9, add for VCC_3V3_SENSOR_EN */
+                /* 0x098 0x37      P8_10, add for VCC_3V3_GPS_EN*/
+                0x078 0x37      /* P9_12, add for OUTPUT_EN */
                 /*LEDs & ALARM*/
                 0x07c 0x27     /* FLIGHT STATUS LED */
                 0x0C8 0x27     /* lcd_data10, GPIO2_16, P8_36, PULL_DOWN, add for buzzer ALARM*/
